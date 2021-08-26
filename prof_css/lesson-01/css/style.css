@@ -1,6 +1,12 @@
 * {
+   margin: 0;
+   padding: 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+body {
+   font-family: Lato;
 }
 
 .header {
@@ -81,9 +87,6 @@
 
  h1 {
     text-align: center;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 36px;
     color: #222222;
@@ -91,9 +94,6 @@
 
  .text_box {
     text-align: center;     
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
@@ -103,77 +103,73 @@
  .card_box {
    Width: 1140px;
    display: flex;
-   justify-content:space-between;
+ }
+
+ .card_box_1 {
+    margin-top: 30px;
  }
 
 .card {
    Width: 360px;
-   Height: 582px;
+   /* Height: 582px; */
    box-sizing: border-box;
+   background: #F8F8F8;
 }
 
 .card_h4 {
-   font-family: Lato;
-   font-style: normal;
-   font-weight: normal;
+   margin-left: 16px;
+   margin-top: 24px;
    font-size: 13px;
    line-height: 16px;
    color: #000000;
 }
 
 .card_p {
-   font-family: Lato;
-font-style: normal;
+margin-top: 12px;
+margin-left: 16px;
+margin-right: 29px;
 font-weight: 300;
 font-size: 14px;
 line-height: 17px;
-
 color: #5D5D5D;
 }
-/* 
-.card_img {
-   Width: 360px;
-   Height: 420px;
-} */
 
 .price {
-   font-family: Lato;
-   font-style: normal;
-   font-weight: normal;
+   margin-left: 16px;
+   margin-top: 18px;
+   margin-bottom: 20px;
    font-size: 16px;
    line-height: 19px;
    color: #F16D7F;
 }
 
 .button {
-    box-sizing: border-box;
-    text-align: center;
-    padding-left: 38px;
-    padding-right: 38px;
-    Width: 211px;
-    Height: 47px;
-    border: 1px solid #FF6A6A;
-    margin-top: 48px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
+   box-sizing: border-box;
+   border: 1px solid #FF6A6A;
+   margin-top: 48px;
+   width: 211px;
+   height: 47px;
+   text-align: center;
+   font-size: 16px;
+   line-height: 19px;
+   color: #F26376;
+   padding-top: 14px;
 }
 
  .feature {
     margin-top: 96px;  
-    border: 1px solid #000;
     height: 341px;
+    background: #222224;
  }
 
  .subscribe {
-    border: 1px solid green;
     height: 448px;
+    background-image: url(../img/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
  }
 
  .footer {
-    border: 1px solid red;
     height: 79px;
+    background: #222224;
  }
