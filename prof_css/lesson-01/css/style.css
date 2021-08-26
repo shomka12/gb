@@ -1,0 +1,179 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222222;
+}
+
+.header_left {
+    border: 1px solid #000;
+    width: 111px;
+    height: 38px;
+}
+
+.header_rigth {
+    border: 1px solid #000;
+    width: 168px;
+    height: 37px;  
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background: #F1E4E6;
+}
+
+ .logo_left {
+    width: 800px;
+    height: 754px;
+ }
+
+ .logo_rigth {
+    width: 800px;
+    height: 754px;
+ }
+
+ .offer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    margin-bottom: 96px;
+    width: 1140px;
+    height: 470px;
+ }
+
+.offer_top {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin-bottom: 30px;
+}
+
+ .offer_1 {
+    width: 360px;
+    height: 260px;
+    margin-right: 30px;
+    background-image: url(../img/offer_1.png);
+ }
+
+ .offer_2 {
+    width: 360px;
+    height: 260px;
+    margin-right: 30px;
+    background-image: url(../img/offer_2.png);
+ }
+ .offer_3 {
+    width: 360px;
+    height: 260px;
+    background-image: url(../img/offer_3.png);
+ }
+ .offer_4 {
+    width: 1140px;
+    height: 180px;
+    background-image: url(../img/offer_4.png);
+ }
+
+ h1 {
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+ }
+
+ .text_box {
+    text-align: center;     
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 48px;
+ }
+
+ .card_box {
+   Width: 1140px;
+   display: flex;
+   justify-content:space-between;
+ }
+
+.card {
+   Width: 360px;
+   Height: 582px;
+   box-sizing: border-box;
+}
+
+.card_h4 {
+   font-family: Lato;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   color: #000000;
+}
+
+.card_p {
+   font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+
+color: #5D5D5D;
+}
+/* 
+.card_img {
+   Width: 360px;
+   Height: 420px;
+} */
+
+.price {
+   font-family: Lato;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 19px;
+   color: #F16D7F;
+}
+
+.button {
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 38px;
+    padding-right: 38px;
+    Width: 211px;
+    Height: 47px;
+    border: 1px solid #FF6A6A;
+    margin-top: 48px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+}
+
+ .feature {
+    margin-top: 96px;  
+    border: 1px solid #000;
+    height: 341px;
+ }
+
+ .subscribe {
+    border: 1px solid green;
+    height: 448px;
+ }
+
+ .footer {
+    border: 1px solid red;
+    height: 79px;
+ }
