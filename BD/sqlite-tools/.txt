@@ -1,0 +1,28 @@
+CREATE TABLE teachers (
+  teacher_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  surname TEXT NOT NULL,
+  email TEXT);
+
+CREATE TABLE courses (
+  course_id INTEGER NOT NULL,
+  course_name TEXT NOT NULL
+);
+
+CREATE TABLE streams (
+  stream_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  course_id INTEGER NOT NULL,
+  number INTEGER NOT NULL,
+  start_date TEXT NOT NULL,
+  number_students INTEGER NOT NULL,
+  FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
+
+CREATE TABLE grades (
+  teacher_id INTEGER NOT NULL,
+  stream_id INTEGER NOT NULL,
+  grade REAL NOT NULL,
+  PRIMARY KEY(teacher_id, stream_id),
+  FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id),
+  FOREIGN KEY (stream_id) REFERENCES streams(stream_id)
+);
