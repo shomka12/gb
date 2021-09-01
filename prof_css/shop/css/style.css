@@ -1,0 +1,51 @@
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+header {
+    background-color: #222222;
+    color: #fff;
+}
+
+.wrap-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.search {
+    margin-left: 40px;
+}
+
+.cart, 
+.registr {
+    margin-left: 33px;
+}
+
+.intro {
+    background-color: #F1E4E6;
+}
+
+.wrap-intro {
+    display: flex;
+}
+
+.intro-left {
+    box-sizing: border-box;
+    background-color: red;
+}
+
+.intro-rigth {
+    box-sizing: border-box;
+    background-color: green;
+}
+
+.advantages {
+    background-color: #222224;
+}
+
+footer {
+    background-color: #222224;
+}
