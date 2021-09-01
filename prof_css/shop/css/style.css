@@ -33,18 +33,23 @@ header {
 }
 
 .intro-left {
-    width: 50%;
+
 }
 
-.intro-rigth {
-    width: 50%;
-    text-align: center;
+.offer {
+    margin-top: 65px;
 }
 
-.advantages {
-    background-color: #222224;
+.offer-top {
+    display: flex;
+    justify-content: space-around;
 }
 
-footer {
-    background-color: #222224;
+.for_men, 
+.for_kids {
+    margin-left: 30px;
+}
+
+.offer-bottom {
+    margin-top: 30px;
 }
