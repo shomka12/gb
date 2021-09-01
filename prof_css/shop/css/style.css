@@ -33,13 +33,12 @@ header {
 }
 
 .intro-left {
-    box-sizing: border-box;
-    background-color: red;
+    width: 50%;
 }
 
 .intro-rigth {
-    box-sizing: border-box;
-    background-color: green;
+    width: 50%;
+    text-align: center;
 }
 
 .advantages {
