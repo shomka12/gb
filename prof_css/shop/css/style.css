@@ -166,8 +166,12 @@ header {
     color: #F16D7F;
 }
 
-/* feature */
-.feature-title {
+/* products */
+.products {
+    margin-bottom: 95px;
+}
+
+.products-title {
     text-align: center;
     font-size: 30px;
     line-height: 36px;
@@ -182,7 +186,7 @@ header {
     color: #9F9F9F;
 }
 
-.feature-list {
+.products-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -190,23 +194,23 @@ header {
     gap: 30px;
 }
 
-.feature-list-item {
+.products-list-item {
     width: 360px;
     background: #F8F8F8;
 }
 
-.feature-img {
+.products-img {
     padding-bottom: 25px;
 }
 
-.feature-item-title {
+.products-item-title {
     padding-bottom: 13px;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
 }
 
-.feature-item-text {
+.products-item-text {
     padding-bottom: 18px;
     font-weight: 300;
     font-size: 14px;
@@ -214,23 +218,35 @@ header {
     color: #5D5D5D;
 }
 
-.feature-price {
+.products-price {
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
 }
 
-.feature-item-title,
-.feature-item-text,
-.feature-price {
+.products-item-title,
+.products-item-text,
+.products-price {
     padding-left: 17px;
 }
 
-.feature-link {
+.products-link {
     text-decoration: none;
     text-align: center;
     border: 1px solid #FF6A6A;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+}
+
+.feature {
+    min-height: 341px;
+    background-color: #222224;
+}
+
+.subscribe {
+    /* min-height: 448px; */
+    background-image: url(../img/subscribe.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
