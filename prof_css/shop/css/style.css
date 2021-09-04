@@ -48,6 +48,7 @@ body {
 .wrap {
     width: 1140px;
     margin: 0 auto;
+    outline: 1px solid #F16D7F;
 }
 
 /* header */
@@ -230,23 +231,84 @@ header {
     padding-left: 17px;
 }
 
+.products-link-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0 0 0;
+}
+
 .products-link {
     text-decoration: none;
-    text-align: center;
     border: 1px solid #FF6A6A;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    padding: 15px 39px;
 }
 
 .feature {
+    display: flex;
+    /* justify-content: space-between; */
+
     min-height: 341px;
     background-color: #222224;
 }
 
+.feature-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.feature-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid red;
+    width: 360px;
+    height: 134px;
+}
+
 .subscribe {
-    /* min-height: 448px; */
+    min-height: 448px;
     background-image: url(../img/subscribe.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+}
+
+.footer {
+    min-height: 79px;
+    background-color: #222224;
+    display: flex;
+    align-items: center;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrigth {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    text-align: center;
+    width: 332px;
+}
+
+.facebook,
+.instagram,
+.pinterest {
+    padding-right: 7px;
+}
+
+.facebook,
+.instagram,
+.pinterest,
+ .twitter {
+    width: 32px;
+    height: 32px;
 }
