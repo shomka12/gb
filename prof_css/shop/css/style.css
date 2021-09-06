@@ -82,6 +82,34 @@ header {
     margin: 0 0 65px 0;
 }
 
+.intro-wrap_catalog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 148px;
+    /* background: url(../img/intro.png) no-repeat -226px bottom; */
+    margin: 0 0 65px 0;
+}
+
+.intro-text-left {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.intro-text-rigth {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.intro-text-rigth-pink {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
 .intro-text {
     width: 410px;
     border-left: 12px solid#F16D7F;
