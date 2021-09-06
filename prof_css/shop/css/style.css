@@ -48,7 +48,7 @@ body {
 .wrap {
     width: 1140px;
     margin: 0 auto;
-    outline: 1px solid #F16D7F;
+    /* outline: 1px solid #F16D7F; */
 }
 
 /* header */
@@ -169,7 +169,7 @@ header {
 
 /* products */
 .products {
-    margin-bottom: 95px;
+    margin: 0 0 95px 0;
 }
 
 .products-title {
@@ -180,7 +180,7 @@ header {
 }
 
 .desc {
-    padding-bottom: 48px;
+    padding: 0 0 48px 0;
     text-align: center;
     font-size: 14px;
     line-height: 17px;
@@ -201,18 +201,18 @@ header {
 }
 
 .products-img {
-    padding-bottom: 25px;
+    padding: 0 0 25px 0;
 }
 
 .products-item-title {
-    padding-bottom: 13px;
+    padding: 0 0 13px 0;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
 }
 
 .products-item-text {
-    padding-bottom: 18px;
+    padding: 0 29px 18px 0;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -223,6 +223,7 @@ header {
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
+    padding: 0 0 20px 0;
 }
 
 .products-item-title,
@@ -249,8 +250,6 @@ header {
 
 .feature {
     display: flex;
-    /* justify-content: space-between; */
-
     min-height: 341px;
     background-color: #222224;
 }
@@ -264,11 +263,27 @@ header {
 .feature-cart {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
     width: 360px;
     height: 134px;
+}
+
+.feature-cart-title {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    padding: 25px 0 16px 0;
+}
+
+.feature-cart-text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    padding: 0 0 0 35px;
 }
 
 .subscribe {
@@ -276,6 +291,14 @@ header {
     background-image: url(../img/subscribe.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.feedback {
+    outline:  1px solid  #F16D7F;
+}
+
+.subscribe-form {
+    outline:  1px solid  #F16D7F;
 }
 
 .footer {
@@ -302,7 +325,7 @@ header {
 .facebook,
 .instagram,
 .pinterest {
-    padding-right: 7px;
+    padding: 0 7px 0 0;
 }
 
 .facebook,
