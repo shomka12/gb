@@ -73,6 +73,10 @@ header {
     background-color: #F1E4E6;
 }
 
+.intro2 {
+    background-color: #F8F3F4;
+}
+
 .intro-wrap {
     display: flex;
     align-items: center;
@@ -87,7 +91,6 @@ header {
     align-items: center;
     justify-content: space-between;
     min-height: 148px;
-    /* background: url(../img/intro.png) no-repeat -226px bottom; */
     margin: 0 0 65px 0;
 }
 
@@ -147,7 +150,7 @@ header {
 .offer-item {
     width: 360px;
     height: 260px;
-    background-color: #C4C4C4;
+    /* background-color: #C4C4C4; */
     display: flex;
     justify-content: center;
     align-items: center;
