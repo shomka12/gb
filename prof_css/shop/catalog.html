@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>catalog</title>
+    <title>Сatalog</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
 </head>
 
@@ -30,10 +30,16 @@
 
     <section class="intro2">
         <div class="wrap">
-            <h1 class="intro-wrap_catalog">
-                <span class="intro-text-left">NEW ARRIVALS </span>
-                <span class="intro-text-rigth">HOME / MEN / <span class="intro-text-rigth-pink">ARRIVALS</span> </span>
-            </h1>
+            <div class="intro-wrap_catalog">
+                <h1 class="intro-text-left">NEW ARRIVALS </h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">HOME</a></li>
+                    <li class="breadcrumb-item" aria-current="page">/</li>
+                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">MEN</a></li>
+                    <li class="breadcrumb-item" aria-current="page">/</li>
+                    <li class="breadcrumb-item active" aria-current="page">NEW ARRIVALS</li>
+                </ol>
+            </div>
         </div>
     </section>
 
@@ -115,6 +121,24 @@
             </ul>
         </div>
     </section>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <section class="feature">
         <div class="feature-wrap wrap">
