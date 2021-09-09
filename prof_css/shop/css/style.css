@@ -2,43 +2,60 @@
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box; }
-  
-  a {
+    box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
-    cursor: pointer; }
-  
-  a:hover {
+    cursor: pointer;
+}
+
+a:hover {
     transform: scale(1.1);
-    transition: 0.3s; }
-  
-  ol, ul {
-    list-style-type: none; }
-  
-  button, input, textarea {
+    transition: 0.3s;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+button,
+input,
+textarea {
     line-height: normal;
     text-transform: none;
-    cursor: pointer; }
-  
-  .fas, input, svg {
-    cursor: pointer; }
-  
-  input:focus-within {
-    outline: none; }
-  
-  details > summary {
-    list-style: none; }
-  
-  summary, input {
+    cursor: pointer;
+}
+
+.fas,
+input,
+svg {
+    cursor: pointer;
+}
+
+input:focus-within {
+    outline: none;
+}
+
+details>summary {
+    list-style: none;
+}
+
+summary,
+input {
     border: 0;
-    outline: none; }
-  
-  summary:hover {
+    outline: none;
+}
+
+summary:hover {
     transition: 0.3s;
-    cursor: pointer; }
-  
-  summary::-webkit-details-marker {
-    display: none; }
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
 
 body {
     font-family: 'Lato', sans-serif;
@@ -64,7 +81,7 @@ header {
     margin: 0 0 0 40px;
 }
 
-.cart, 
+.cart,
 .registr {
     margin: 0 0 0 33px;
 }
@@ -105,7 +122,7 @@ header {
 }
 
 .breadcrumb-link {
-    text-decoration:none;
+    text-decoration: none;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -151,8 +168,8 @@ header {
 }
 
 .offer-wrap {
-    display: flex; 
-    justify-content: space-between;   
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     font-size: 16px;
     line-height: 19px;
@@ -193,7 +210,7 @@ header {
 .offer-item-text-top {
     font-size: 16px;
     line-height: 19px;
-    text-align: center;    
+    text-align: center;
     color: #FFFFFF;
 }
 
@@ -299,7 +316,7 @@ header {
 .feature-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
 
 .feature-cart {
@@ -368,6 +385,7 @@ header {
     align-items: center;
     margin: 0 94px 6px 0;
 }
+
 .subscribe-form {
     display: flex;
     margin: 32px 0 0 0;
@@ -386,27 +404,30 @@ header {
 }
 
 .subscribe-field {
-	padding: 16px;
-	background-color:#E1E1E1;;
-	border: 1px solid transparent;
-	border-top-left-radius: 23px;
-	border-bottom-left-radius: 23px;
+    padding: 16px;
+    background-color: #E1E1E1;
+    ;
+    border: 1px solid transparent;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
     font-size: 14px;
     line-height: 17px;
     color: #222224;
     opacity: 0.67;
 }
+
 .subscribe-field::placeholder {
-	color: #222224;
+    color: #222224;
 }
 
 .subscribe-btn {
-	padding: 16px;
-	background-color: #F16D7F;;
+    padding: 16px;
+    background-color: #F16D7F;
+    ;
     border: 1px solid transparent;
-	border-top-right-radius: 23px;
-	border-bottom-right-radius: 23px;
-	color: #fff;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    color: #fff;
     font-size: 14px;
     line-height: 17px;
 }
