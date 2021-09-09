@@ -432,11 +432,27 @@ header {
     width: 332px;
 }
 
+.social {
+    display: flex;
+}
+
 .social_icon {
+    background-color: #FFFFFF;
+    color: #222224;
     width: 32px;
     height: 32px;
+    display: flex;
+    font-size: 21px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_icon:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
 }
 
 .social_icon:not(:last-child) {
-    padding: 0 7px 0 0;
+    margin: 0 7px 0 0;
 }
