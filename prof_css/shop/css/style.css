@@ -276,6 +276,11 @@ header {
     margin: 48px 0 0 0;
 }
 
+.products-link:hover {
+    background-color: #F26376;
+    color: #FFFFFF;
+}
+
 .products-link {
     text-decoration: none;
     border: 1px solid #FF6A6A;
