@@ -100,14 +100,28 @@ header {
     color: #F16D7F;
 }
 
-.intro-text-rigth {
+.breadcrumb {
+    display: flex;
+}
+
+.breadcrumb-link {
+    text-decoration:none;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #636363;
 }
 
-.intro-text-rigth-pink {
+.breadcrumb-item:not(:last-child) {
+    padding: 0 3px 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumb-item:last-child {
+    font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     color: #F16D7F;
@@ -260,6 +274,11 @@ header {
     justify-content: center;
     align-items: center;
     margin: 48px 0 0 0;
+}
+
+.products-link:hover {
+    background-color: #F26376;
+    color: #FFFFFF;
 }
 
 .products-link {
