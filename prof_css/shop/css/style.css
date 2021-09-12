@@ -201,12 +201,7 @@ header {
   border: none;
 }
 
-.filter ::-webkit-details-marker {
-  display: none;
-}
-
 .filter[open] {
-  padding-left: 10px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -219,9 +214,9 @@ header {
 
 .fiter-content {
   position: absolute;
-  background-color: gold;
   width: 360px;
   left: 0;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
