@@ -173,15 +173,10 @@ header {
     font-size: 14px;
     line-height: 17px;
     box-sizing: border-box;
-    position: relative;
-    // outline: none;
-    // border: none;
+    // position: relative;
+    outline: none;
+    border: none;
 }
-
-// .filter-wrap {
-//     display: flex;
-//     justify-content: start;
-// }
 
 .filter ::-webkit-details-marker {
     display: none;
@@ -191,19 +186,20 @@ header {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     // border-bottom: 1px solid #EF5B70;
     // border-left: 5px solid #EF5B70;
-    // padding: 11px;
+
 }
 
-.filter[open]>summary {
+.filter[open]>.summary {
     color: #EF5B70;
     outline: none;
     border: none;
+    padding: 11px;
 }
 
-.fiter-content {
-    // position: absolute;
+.filter-content {
+    position: relative;
     width: 360px;
-    left: 10px;
+    padding-left: 10px;
     background-color: #FFFFFF;
     // box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -218,7 +214,7 @@ header {
     margin: 0 0 11px 0;
 }
 
-.filter-title[open]>summary {
+.filter-title[open]>.summary {
     font-size: 14px;
     line-height: 17px;
     color: #EF5B70;
