@@ -1,0 +1,36 @@
+details {
+    width: 360px;
+    background: #FFFFFF;
+
+    /* display: none; */
+    outline: none;
+    border: none;
+
+}
+
+details>summary {
+    padding: 5px;
+    background-color: white;
+    /* border: 1px #ccc solid; */
+    cursor: pointer;
+    list-style-type: none;
+}
+
+details>div {
+    /* border: 1px #ccc solid; */
+
+    padding: 10px;
+}
+
+details[open]>summary {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    color: #EF5B70;
+    background-color: white;
+}
+
+/* 
+details[open]>summary {
+    color: #eee;
+    background-color: #333;
+} */

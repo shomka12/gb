@@ -197,8 +197,10 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  outline: none;
-  border: none;
+}
+
+.filter ::-webkit-details-marker {
+  display: none;
 }
 
 .filter[open] {
@@ -213,12 +215,30 @@ header {
 }
 
 .fiter-content {
-  position: absolute;
   width: 360px;
-  left: 0;
+  left: 10px;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter-link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.filter-item {
+  margin: 0 0 11px 0;
+}
+
+.filter-title[open] > summary {
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  outline: none;
+}
+
+.filter-list {
+  padding: 24px 0 24px 24px;
 }
 
 .offer-wrap {
