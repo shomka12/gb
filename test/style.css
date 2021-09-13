@@ -1,36 +1,85 @@
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
 details {
-    width: 360px;
-    background: #FFFFFF;
-
-    /* display: none; */
-    outline: none;
-    border: none;
-
+  position: relative;
+  margin-bottom: .5rem;
+  min-height: 1rem;
+  max-height: 3rem;
+  -webkit-transition: min-height .15s linear, max-height .5s linear;
+  transition: min-height .15s linear, max-height .5s linear;
+  -webkit-transition: min-height .15s linear, max-height .15s linear;
+  overflow: hidden;
 }
 
-details>summary {
-    padding: 5px;
-    background-color: white;
-    /* border: 1px #ccc solid; */
-    cursor: pointer;
-    list-style-type: none;
+details summary {
+  display: inline-block;
+  padding-left: 1.5em;
+  cursor: pointer;
+  outline: 0;
+  transition: color .12s;
+  -webkit-transition: color .12s;
 }
 
-details>div {
-    /* border: 1px #ccc solid; */
-
-    padding: 10px;
+details summary::-webkit-details-marker {
+  display: none;
 }
 
-details[open]>summary {
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-
-    color: #EF5B70;
-    background-color: white;
+details summary::-moz-list-bullet {
+  list-style-type: none;
 }
 
-/* 
-details[open]>summary {
-    color: #eee;
-    background-color: #333;
-} */
+details summary span {
+  border-bottom: 1px currentColor dotted;
+}
+
+details summary:hover {
+  color: #d06c6c;
+}
+
+details summary::before {
+  content: "";
+  left: 0;
+  top: .4em;
+  position: absolute;
+  background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50%/1em 1em;
+  width: 1em;
+  height: 1em;
+  -webkit-transition: -webkit-transform .1s linear;
+  transition: -webkit-transform .1s linear;
+  transition: transform .1s linear;
+  transition: transform .1s linear, -webkit-transform .1s linear;
+  -webkit-transition: transform .1s linear;
+}
+
+details summary ~ * {
+  padding-left: 1.5em;
+  opacity: 0;
+  transition: opacity .15s linear;
+  -webkit-transition: opacity .15s linear;
+}
+
+details[open] {
+  min-height: 2em;
+  max-height: 20em;
+}
+
+details[open] summary {
+  color: #d06c6c;
+}
+
+details[open] summary ~ * {
+  opacity: 1;
+}
+
+details[open] summary:before {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+/*# sourceMappingURL=style.css.map */

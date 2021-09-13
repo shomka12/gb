@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -310,6 +311,52 @@ header {
   color: #F16D7F;
 }
 
+.slider {
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.slider-img {
+  border: 3px solid cyan;
+  /*вся картинка видна*/
+}
+
+.slider-btn {
+  background-color: grey;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #000;
+  position: absolute;
+}
+
+.slider-btn:hover {
+  color: pink;
+  border-color: pink;
+  background-color: lightgray;
+}
+
+.slider-btn:active {
+  background-color: #000;
+}
+
+.slider-btn-left {
+  left: 5px;
+}
+
+.slider-btn-right {
+  right: 5px;
+}
+
 .products {
   margin: 0 0 95px 0;
 }
@@ -344,6 +391,7 @@ header {
 
 .products-list-item {
   width: 360px;
+  background: #F8F8F8;
   position: relative;
   overflow: hidden;
 }
@@ -464,6 +512,63 @@ header {
   line-height: 19px;
   color: #F26376;
   padding: 15px 39px;
+}
+
+.pagination {
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  width: 284px;
+  padding: 15px;
+  margin: 48px auto 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination-check {
+  text-decoration: none;
+  color: #000000;
+}
+
+.pagination-number {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+  text-decoration: none;
+}
+
+.pagination-number-span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+}
+
+.pagination-number-six {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+  text-decoration: none;
+}
+
+.pagination-number:hover {
+  color: #EF5B70;
+}
+
+.pagination-number:not(:nth-child(9), :nth-child(8)) {
+  padding: 0 0 0 20px;
+}
+
+.pagination-number:nth-child(9) {
+  padding: 0 20px 0 0;
 }
 
 .feature {

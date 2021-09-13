@@ -281,6 +281,45 @@ header {
     color: #F16D7F;
 }
 
+$shift: 50px;
+
+.slider {
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-bottom: $shift;
+	
+		&-img {
+			border: 3px solid cyan; /*вся картинка видна*/
+		}
+	
+		&-btn {
+		background-color: grey;
+		color: #fff;
+		padding: 10px;
+		border: 1px solid #000;
+		position: absolute;
+			&:hover {
+				color: pink;
+				border-color: pink;
+				background-color: lightgray;
+			}
+			&:active {
+				background-color: #000;
+			}
+			
+			&-left {
+				left: 5px;
+			}
+			
+			&-right {
+				right: 5px;
+			}
+	}
+}
+
 .products {
     margin: 0 0 95px 0;
 }
@@ -311,6 +350,7 @@ header {
 .products-list-item {
     width: 360px;
     // opacity: 0;
+    background: #F8F8F8;
     position: relative;
     overflow: hidden;
 }
@@ -412,6 +452,57 @@ header {
     line-height: 19px;
     color: #F26376;
     padding: 15px 39px;
+}
+
+.pagination {
+    border: 1px solid #C4C4C4;
+  border-radius: 5px;
+    width: 284px;
+    padding: 15px;
+    margin: 48px auto 96px;
+    display: flex;
+    justify-content: space-between;
+  align-items:center;
+}
+
+.pagination-check {
+    text-decoration: none;
+    color: #000000;
+}
+
+.pagination-number {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    text-decoration: none;
+}
+
+.pagination-number-span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+}
+
+.pagination-number-six {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    text-decoration: none;
+}
+
+.pagination-number:hover {
+    color: #EF5B70;
+}
+
+.pagination-number:not(:nth-child(9), :nth-child(8)) {
+  padding: 0 0 0 20px;
+}
+
+.pagination-number:nth-child(9) {
+  padding: 0 20px 0 0;
 }
 
 .feature {
