@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -129,7 +128,6 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 148px;
-  margin: 0 0 65px 0;
 }
 
 .intro-text-left {
@@ -199,6 +197,7 @@ header {
           box-sizing: border-box;
   outline: none;
   border: none;
+  margin: 51px 0 64px 0;
 }
 
 .filter ::-webkit-details-marker {
@@ -323,30 +322,28 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .slider-img {
-  border: 3px solid cyan;
-  /*вся картинка видна*/
+  width: 597px;
+  height: 724px;
 }
 
 .slider-btn {
-  background-color: grey;
+  background-color: rgba(42, 42, 42, 0.15);
   color: #fff;
   padding: 10px;
-  border: 1px solid #000;
   position: absolute;
 }
 
 .slider-btn:hover {
-  color: pink;
-  border-color: pink;
-  background-color: lightgray;
+  color: #F16D7F;
+  background-color: #F7F7F7;
 }
 
 .slider-btn:active {
-  background-color: #000;
+  background-color: #000000;
 }
 
 .slider-btn-left {

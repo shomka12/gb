@@ -108,7 +108,7 @@ header {
     align-items: center;
     justify-content: space-between;
     min-height: 148px;
-    margin: 0 0 65px 0;
+    // margin: 0 0 65px 0;
 }
 
 .intro-text-left {
@@ -176,6 +176,7 @@ header {
     // position: relative;
     outline: none;
     border: none;
+    margin: 51px 0 64px 0;
 }
 
 .filter ::-webkit-details-marker {
@@ -281,43 +282,46 @@ header {
     color: #F16D7F;
 }
 
-$shift: 50px;
+$shift: 0px;
 
 .slider {
-	background-color: #eee;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	padding-bottom: $shift;
-	
-		&-img {
-			border: 3px solid cyan; /*вся картинка видна*/
-		}
-	
-		&-btn {
-		background-color: grey;
-		color: #fff;
-		padding: 10px;
-		border: 1px solid #000;
-		position: absolute;
-			&:hover {
-				color: pink;
-				border-color: pink;
-				background-color: lightgray;
-			}
-			&:active {
-				background-color: #000;
-			}
-			
-			&-left {
-				left: 5px;
-			}
-			
-			&-right {
-				right: 5px;
-			}
-	}
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: $shift;
+
+    &-img {
+        width: 597px;
+        height: 724px;
+    }
+
+    &-btn {
+        background-color: rgba(42, 42, 42, 0.15);
+        color: #fff;
+        padding: 10px;
+        // border: 1px solid #000;
+        position: absolute;
+
+        &:hover {
+            color: #F16D7F;
+            // border-color: pink;
+            background-color: #F7F7F7;
+        }
+
+        &:active {
+            background-color: #000000;
+        }
+
+        &-left {
+            left: 5px;
+        }
+
+        &-right {
+            right: 5px;
+        }
+    }
 }
 
 .products {
@@ -456,13 +460,13 @@ $shift: 50px;
 
 .pagination {
     border: 1px solid #C4C4C4;
-  border-radius: 5px;
+    border-radius: 5px;
     width: 284px;
     padding: 15px;
     margin: 48px auto 96px;
     display: flex;
     justify-content: space-between;
-  align-items:center;
+    align-items: center;
 }
 
 .pagination-check {
@@ -498,11 +502,11 @@ $shift: 50px;
 }
 
 .pagination-number:not(:nth-child(9), :nth-child(8)) {
-  padding: 0 0 0 20px;
+    padding: 0 0 0 20px;
 }
 
 .pagination-number:nth-child(9) {
-  padding: 0 20px 0 0;
+    padding: 0 20px 0 0;
 }
 
 .feature {
