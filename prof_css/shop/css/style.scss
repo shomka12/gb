@@ -168,20 +168,46 @@ header {
 }
 
 .filter {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.filter-title {
+    margin-bottom: 20px;   
+}
+
+  ::-webkit-details-marker {display: none;}
+
+  .summary {
+    width: 360px;
+    display: block;
+    border-left: 10px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 11px;
+    margin: 24px 0 25px 0;
+    outline: none;
+    font-size: 14px;
+    line-height: 17px;
+
+   
+  }
+
+.filter {
     width: 360px;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     box-sizing: border-box;
-    // position: relative;
+    position: relative;
     outline: none;
     border: none;
-    margin: 51px 0 64px 0;
+    // margin: 51px 0 64px 0;
 }
 
-.filter ::-webkit-details-marker {
-    display: none;
-}
+// .filter ::-webkit-details-marker {
+//     display: none;
+// }
 
 .filter[open] {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -190,42 +216,46 @@ header {
 
 }
 
-.filter[open]>.summary {
-    color: #EF5B70;
-    outline: none;
-    border: none;
-    padding: 11px;
-}
+// .filter[open]>.summary {
+//     color: #EF5B70;
+//     outline: none;
+//     border: none;
+//     padding: 11px;
+// }
 
-.filter-content {
-    position: relative;
-    width: 360px;
-    padding-left: 10px;
-    background-color: #FFFFFF;
-    // box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
+// .filter-content {
+//      width: 360px;
+//     padding-left: 10px;
+//     background-color: #FFFFFF;
+//     // box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+// }
 
 .filter-link {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+    text-decoration: none;
+    margin: 0 0 0 21px;
 }
 
 .filter-item {
     margin: 0 0 11px 0;
 }
 
-.filter-title[open]>.summary {
-    font-size: 14px;
-    line-height: 17px;
-    color: #EF5B70;
-    outline: none;
+// .filter-title[open]>.summary {
+//     font-size: 14px;
+//     line-height: 17px;
+//     color: #EF5B70;
+//     outline: none;
 
-}
+// }
 
-.filter-list {
-    padding: 24px 0 24px 24px;
-}
+// .filter-list {
+//     padding: 24px 0 24px 24px;
+//     font-size: 14px;
+//     line-height: 17px;
+//     color: #6F6E6E;
+// }
 
 .offer-wrap {
     display: flex;
@@ -326,6 +356,7 @@ $shift: 0px;
 
 .products {
     margin: 0 0 95px 0;
+    position: relative;
 }
 
 .products-title {
