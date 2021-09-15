@@ -76,7 +76,9 @@
             </div>
         </div>
     </section>
-    <div class="wrap">
+
+    <section class="filter-wrap wrap">
+    <!-- <div class="wrap"> -->
         <details class="filter">
             <summary>FILTER <svg class="filter-svg" width="15" height="10" viewBox="0 0 15 10"
                     xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +135,40 @@
                 </details>
             </div>
         </details>
-    </div>
+
+        <div class="choose-filter">
+            <details class="choose-filter-title">
+                <summary>
+                    TRENDING NOW <i class="fas fa-angle-down"></i>
+                </summary>
+                <ul>
+                    <li><label><input type="checkbox" /> Red</label>
+                    <li><label><input type="checkbox" /> White</label>
+                    <li><label><input type="checkbox" /> Black</label>
+                </ul>
+            </details>
+            <details class="choose-filter-title">
+                <summary>
+                    SIZE<i class="fas fa-angle-down"></i>
+                </summary>
+                <ul>
+                    <li><label><input type="checkbox" /> XS</label>
+                    <li><label><input type="checkbox" /> S</label>
+                    <li><label><input type="checkbox" /> M</label>
+                    <li><label><input type="checkbox" /> L</label>
+                </ul>
+            </details>
+            <details class="choose-filter-title">
+                <summary>
+                    PRICE<i class="fas fa-angle-down"></i>
+                </summary>
+                <ul>
+                    <li><input type="number" min="0" max="10000" step="1" value="1">
+                </ul>
+            </details>
+        </div>
+    <!-- </div> -->
+</section>
     <section class="products">
         <div class="wrap products-wrap">
             <ul class="products-list">

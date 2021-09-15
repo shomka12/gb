@@ -106,13 +106,13 @@ header {
             font-size: 48px;
             line-height: 58px;
         }
-        
+
         &-small {
             font-weight: bold;
             font-size: 32px;
             line-height: 38px;
         }
-        
+
         &-pink {
             color: #F16D7F;
         }
@@ -175,25 +175,30 @@ header {
     // position: absolute;
     outline: none;
     border: none;
-    margin: 39px 304px 63px 22px;
+    margin: 51px 304px 64px 22px;
     color: #000000;
 
+    &-wrap {
+        display: flex;
+        justify-content: start;
+    }
+
     &-title {
-        margin-bottom: 20px;  
+        margin-bottom: 20px;
         // border: 1px solid #E1E1E1;
     }
-       
+
     &[open] {
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         color: #EF5B70;
         // padding: 13px 0 0 16px;
         fill: #EF5B70;
     }
-    
+
     &-svg {
         margin: 0 0 0 11px;
     }
-    
+
     &-link {
         font-size: 14px;
         line-height: 17px;
@@ -201,25 +206,27 @@ header {
         text-decoration: none;
         margin: 0 0 0 21px;
     }
-    
+
     &-item {
         margin: 0 0 11px 0;
     }
 }
 
-::-webkit-details-marker {display: none;}
-    
+::-webkit-details-marker {
+    display: none;
+}
+
 .summary {
-  width: 360px;
-  display: block;
-  border-left: 10px solid #EF5B70;
-  border-bottom: 1px solid #EBEBEB;
-  padding: 11px;
-  margin: 24px 0 25px 0;
-  outline: none;
-  font-size: 14px;
-  line-height: 17px; 
-  position: relative;
+    width: 360px;
+    display: block;
+    border-left: 10px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 11px;
+    margin: 24px 0 25px 0;
+    outline: none;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
 }
 
 .offer-wrap {
@@ -244,29 +251,29 @@ header {
     &-women {
         background-image: url(../img/for_women.jpg);
     }
-    
+
     &-men {
         background-image: url(../img/for_men.jpg);
     }
-    
+
     &-kids {
         background-image: url(../img/for_kids.jpg);
     }
-    
+
     &-accesories {
         background-image: url(../img/accesories.jpg);
         width: 100%;
         height: 180px;
         margin: 30px 0 0 0;
     }
-    
+
     &-text-top {
         font-size: 16px;
         line-height: 19px;
         text-align: center;
         color: #FFFFFF;
     }
-    
+
     &-text-bottom {
         font-weight: bold;
         font-size: 24px;
@@ -313,7 +320,7 @@ $shift: 64px;
         &-right {
             right: 0;
         }
-        
+
     }
 }
 
@@ -327,7 +334,7 @@ $shift: 64px;
         color: #F16D7F;
         margin: 64px 0 0 0;
     }
-    
+
     &-title-2 {
         font-weight: 300;
         font-size: 18px;
@@ -335,7 +342,7 @@ $shift: 64px;
         color: #4D4D4D;
     }
 
-    
+
     &-price {
         font-weight: 300;
         font-size: 24px;
@@ -356,8 +363,19 @@ $shift: 64px;
         line-height: 19px;
         color: #F26376;
         margin: 48px 0 64px 0;
+
+        &:hover {
+            color: #F7F7F7;
+            background-color: #F16D7F;
+            // fill: #F7F7F7;
+
+            &:hover .about-cart-svg {
+                fill: #F7F7F7;
+            }
+        }
+
     }
-    
+
     &-cart-svg {
         margin: 15px 22px 15px 24px;
         width: 36px;
@@ -366,10 +384,10 @@ $shift: 64px;
     }
 
     &-rectangle {
-        width: 63px; 
-        height: 3px; 
-        border:1px solid #F16D7F; 
-        margin:12px auto;
+        width: 63px;
+        height: 3px;
+        border: 1px solid #F16D7F;
+        margin: 12px auto;
         background-color: #F16D7F;
     }
 
@@ -396,6 +414,7 @@ $shift: 64px;
         text-align: center;
         margin: 32px 0 64px 0;
     }
+
     &-filter {
         display: flex;
         justify-content: center;
@@ -426,8 +445,40 @@ $shift: 64px;
     margin-left: 9px;
 }
 
+.choose-filter {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: -295px;
+    margin-top: 51px;
+    margin-bottom: 64px;
+    // z-index: 4;
+
+    &-title {
+        margin: 0 23px 0 0;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        display: flex;
+        flex-direction: column;
+        // z-index: 4;
+
+
+        &[open]>summary {
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            background: #FFFFFF;
+            color: #EF5B70;
+            fill: #EF5B70;
+            box-sizing: border-box;
+        }
+    }
+}
+
+
+
 .about-wrap {
-    background-color:  #FFFFFF;;
+    background-color: #FFFFFF;
+    ;
     margin-top: - $shift;
     position: relative;
     display: flex;
@@ -443,7 +494,8 @@ $shift: 64px;
 .products {
     margin: 0 0 95px 0;
     position: relative;
-    
+    // padding: 0 0 20px 0;
+
     &-title {
         text-align: center;
         font-size: 30px;
@@ -469,27 +521,29 @@ $shift: 64px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             opacity: 1;
         }
-            
-         &:hover .overlay {
+
+        &:hover .overlay {
             opacity: 1;
         }
     }
-  
+
     &-img {
+        width: 100%;
+        display: block;
         padding: 0 0 25px 0;
     }
 
     &-img:hover {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
-    
+
     &-item-title {
         padding: 0 0 13px 0;
         font-size: 13px;
         line-height: 16px;
         color: #000000;
     }
-    
+
     &-item-text {
         padding: 0 29px 18px 0;
         font-weight: 300;
@@ -497,32 +551,32 @@ $shift: 64px;
         line-height: 17px;
         color: #5D5D5D;
     }
-    
+
     &-price {
         font-size: 16px;
         line-height: 19px;
         color: #F16D7F;
         padding: 0 0 20px 0;
     }
-    
+
     &-item-title,
     &-item-text,
     &-price {
         padding-left: 17px;
     }
-    
+
     &-link-wrap {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 48px 0 0 0;
     }
-    
+
     &-link:hover {
         background-color: #F26376;
         color: #FFFFFF;
     }
-    
+
     &-link {
         text-decoration: none;
         border: 1px solid #FF6A6A;
@@ -587,7 +641,7 @@ $shift: 64px;
         text-decoration: none;
         color: #000000;
     }
-    
+
     &-number {
         font-weight: 300;
         font-size: 16px;
@@ -601,7 +655,7 @@ $shift: 64px;
             line-height: 19px;
             color: #C4C4C4;
         }
-        
+
         &-six {
             font-weight: 300;
             font-size: 16px;
@@ -609,20 +663,20 @@ $shift: 64px;
             color: #C4C4C4;
             text-decoration: none;
         }
-        
+
         &:hover {
             color: #EF5B70;
         }
-        
+
         &:not(:nth-child(9), :nth-child(8)) {
             padding: 0 0 0 20px;
         }
-        
+
         &:nth-child(9) {
             padding: 0 20px 0 0;
         }
     }
-    
+
 
 }
 
@@ -642,14 +696,14 @@ $shift: 64px;
         width: 360px;
         height: 134px;
     }
-    
+
     &-cart-title {
         font-size: 20px;
         line-height: 24px;
         color: #FBFBFB;
         padding: 25px 0 16px 0;
     }
-    
+
     &-cart-text {
         font-weight: 300;
         font-size: 14px;
@@ -677,24 +731,24 @@ $shift: 64px;
         align-items: center;
         margin: 0 94px 6px 0;
     }
-    
+
     &-form {
         display: flex;
         margin: 32px 0 0 0;
-    
+
     }
-    
+
     &-title {
         font-weight: bold;
         font-size: 24px;
         line-height: 167.2%;
-    
+
         &-small {
             font-size: 18px;
             line-height: 167.2%;
         }
     }
-    
+
     &-field {
         padding: 16px;
         background-color: #E1E1E1;
@@ -709,9 +763,9 @@ $shift: 64px;
         &::placeholder {
             color: #222224;
         }
-    
+
     }
-        
+
     &-btn {
         padding: 16px;
         background-color: #F16D7F;
@@ -744,7 +798,7 @@ $shift: 64px;
     &-photo {
         padding: 0 0 30px 0;
     }
-    
+
     &-text {
         font-size: 20px;
         line-height: 24px;
@@ -788,12 +842,12 @@ $shift: 64px;
         text-align: center;
         align-items: center;
         justify-content: center;
-    
+
         &:hover {
             background-color: #F16D7F;
             color: #FFFFFF;
         }
-        
+
         &:not(:last-child) {
             margin: 0 7px 0 0;
         }
