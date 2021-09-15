@@ -491,7 +491,7 @@ header {
 }
 
 .fa-angle-down {
-  margin-left: 9px;
+  margin: 0 0 0 9px;
 }
 
 .choose-filter {
@@ -900,6 +900,31 @@ header {
   color: #fff;
   font-size: 14px;
   line-height: 17px;
+}
+
+.shopping {
+  margin: 96px 0 128px 0;
+}
+
+.shopping-card-list-item {
+  height: 306px;
+  width: 652px;
+  margin: 0 0 40px 0;
+  -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+          filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopping-card-list-item-img-1 {
+  width: 262px;
+  background-image: url(../img/shopping-cart-img-1.png);
+}
+
+.shopping-card-list-item-img-2 {
+  width: 262px;
+  background: url(../img/shopping-cart-img-2.png), #F3EEEF;
 }
 
 .subscribe-wrap {
