@@ -188,70 +188,98 @@ header {
   color: #F16D7F;
 }
 
-.filter {
-  width: 360px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: none;
-  border: none;
-  margin: 51px 304px 64px 22px;
-  color: #000000;
-}
-
-.filter-wrap {
+.container {
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
-.filter-title {
-  margin-bottom: 20px;
+.filters {
+  margin: 0 0 64px 0;
 }
 
-.filter[open] {
+.filters__filter {
+  position: relative;
+  width: 360px;
+  color: #222222;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.filters__filter > summary {
+  display: block;
+  padding: 15px;
+}
+
+.filters__filter[open] {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  color: #EF5B70;
-  fill: #EF5B70;
 }
 
-.filter-svg {
-  margin: 0 0 0 11px;
+.filters__filter[open] > summary {
+  color: #F16D7F;
 }
 
-.filter-link {
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6E6E;
-  text-decoration: none;
-  margin: 0 0 0 21px;
+.filters__filter[open] > summary path {
+  fill: #F16D7F;
 }
 
-.filter-item {
-  margin: 0 0 11px 0;
+.filters__img {
+  width: 15px;
+  height: 10px;
 }
 
-::-webkit-details-marker {
-  display: none;
-}
-
-.summary {
+.filters__choice {
+  position: absolute;
   width: 360px;
-  display: block;
-  border-left: 10px solid #EF5B70;
-  border-bottom: 1px solid #EBEBEB;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.filters__sub-filter {
   padding: 11px;
-  margin: 24px 0 25px 0;
+}
+
+.filters__sub-filter > summary {
+  display: block;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #ececec;
+  padding: 11px;
+}
+
+.filters__sub-filter[open] > summary {
+  color: #F16D7F;
+}
+
+.filters__list {
+  background: #ffffff;
+  padding: 14px 0 0 16px;
+}
+
+.filters__elem {
+  margin: 10px 0;
+}
+
+.filters__link {
+  color: #222222;
+}
+
+.filters__select {
   outline: none;
-  font-size: 14px;
-  line-height: 17px;
-  position: relative;
+  padding: 0;
+}
+
+.filters__select[open] .filters__value[selected] {
+  background-color: #F16D7F;
 }
 
 .offer-wrap {
