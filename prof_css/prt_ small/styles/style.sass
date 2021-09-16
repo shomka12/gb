@@ -1,0 +1,389 @@
+@import 'reset'
+@import 'colors'
+@import 'header'
+@import 'footer'
+
+//  Главная страница
+
+// header вынесен в отдельный файл header
+.brand
+  height: 764px
+  background-color: lighten(desaturate(adjust-hue($colorRed, -1), 50.79), 23.33)
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  margin: 0 0 65px 0
+
+  &__wrap
+    height: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    background: url(../images/brand_man.png) no-repeat -220px
+
+  &__text
+    font-weight: 900
+    font-size: 48px
+    line-height: 58px
+    text-align: start
+    border-left: 12px solid $colorRed
+    padding: 0 0 0 16px
+    margin: 0 7% 10% 0
+
+  &__black, &__red
+    font-weight: 700
+    font-size: 32px
+    line-height: 38px
+
+  &__red
+    color: $colorRed
+
+.offers
+  margin: 0 0 95px 0
+  &__wrap
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    gap: 30px
+
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__item:not(:last-child)
+    width: 360px
+    height: 260px
+
+  &__item:last-child
+    width: 100%
+    height: 180px
+
+  &__women
+    background: url(../images/offers1.png)
+    background-size: cover
+  &__women:hover
+    filter: brightness(50%)
+
+  &__men
+    background: url(../images/offers2.png)
+    background-size: cover
+  &__men:hover
+    filter: brightness(50%)
+
+  &__kids
+    background: url(../images/offers3.png)
+    background-size: cover
+  &__kids:hover
+    filter: brightness(50%)
+
+  &__accesories
+    background: url(../images/offers4.png)
+    background-size: cover
+  &__accesories:hover
+    filter: brightness(50%)
+
+  &__text
+    color: $colorMain
+    font-size: 16px
+    font-weight: 400
+    text-align: center
+
+  &__decor
+    color: $colorRed
+    font-size: 24px
+    font-weight: 700
+
+.featured
+  margin: 0 0 90px 0
+
+  &__title
+    font-size: 30px
+    line-height: 36px
+    margin: 0 0 10px 0
+    text-align: center
+
+  &__text
+    margin: 0 0 45px 0
+    text-align: center
+    font-size: 14px
+    line-height: 17px
+    color: darken($colorLight, 30.20)
+
+  &__wrap
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 30px
+    margin-bottom: 50px
+
+  &__item
+    width: 360px
+    background-color: lighten($colorLight, 5.88)
+    border: 1px solid transparent
+    position: relative
+
+  &__item:hover
+    box-shadow: 0 0 5px 5px $colorLight
+    cursor: pointer
+    transform: scale(1.1)
+    transition: .3s
+
+  &__img
+    width: 100%
+    height: 420px
+    background-color: darken($colorLight, 1.18)
+
+  &__img-darken
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 420px
+    background-color: rgba(58, 56, 56, 0.83)
+
+  &__item:hover &__img-darken
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__button
+    color: $colorMain
+    border: 1px solid $colorMain
+    padding: 10px 20px
+
+  &__button:hover
+    box-shadow: 0 0 2px 2px $colorMain
+
+  &__content
+    padding: 25px 16px 20px
+
+  &__name
+    font-size: 13px
+    font-weight: 700
+    line-height: 16px
+    color: darken($colorDark, 13.33)
+    margin: 0 0 12px 0
+
+  &__description
+    font-size: 14px
+    font-weight: 400
+    line-height: 17px
+    color: darken($colorLight, 56.08)
+    margin: 0 0 18px 0
+
+  &__price
+    font-size: 16px
+    font-weight: 400
+    line-height: 19px
+    color: $colorRed
+
+.button-allProduct
+  display: block
+  text-align: center
+  font-size: 16px
+  font-weight: 400
+  line-height: 19px
+  min-width: 200px
+  max-width: 220px
+  padding: 15px 39px
+  margin: 0 auto 115px
+  color: $colorRed
+  border: 1px solid $colorRed
+
+  &:hover
+    color: $colorMain
+    border: 1px solid $colorRed
+    background-color: $colorRed
+
+.info
+  background-color: $colorDark
+
+  &__wrap
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding: 103px 0
+    gap: 120px
+
+  &__item
+    text-align: center
+    max-width: 306px
+
+  &__item:hover
+    transform: scale(1.1)
+    transition: .3s
+
+  &__img
+    width: 48px
+    height: 40px
+    color: $colorRed
+
+  &__title
+    color: darken($colorMain, 1.57)
+    font-size: 20px
+    line-height: 24px
+    font-weight: 400
+    margin: 20px 0 16px
+
+  &__text
+    color: darken($colorMain, 1.57)
+    font-size: 14px
+    line-height: 17px
+    font-weight: 300
+    max-width: 320px
+    text-align: center
+
+
+// subscribe и footer вынесены в отдельный файл footer
+
+//  Каталог
+
+.breadcrumbs
+  background-color: lighten(desaturate(adjust-hue($colorRed, -4), 56.18), 27.65)
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  margin: 0 0 51px 0
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 30px
+    flex-wrap: wrap
+
+  &__current
+    padding: 60px 0
+    font-size: 24px
+    line-height: 29px
+    color: $colorRed
+
+  &__list
+    display: flex
+    font-size: 14px
+    line-height: 17px
+    font-weight: 400
+
+  &__link>a
+    color: lighten($colorDark, 25.49)
+
+  &__link>a:hover
+    color: $colorRed
+
+  &__link_red
+    color: $colorRed
+    font-weight: 700
+
+  &__link+&__link
+    padding-left: 8px
+
+  &__link + &__link::before
+    display: inline-block
+    padding-right: 8px
+    color: lighten($colorDark, 25.49)
+    content: "/"
+
+.filters
+  margin: 0 0 64px 0
+
+  &__wrap
+    padding: 10px 0
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    gap: 30px
+
+  &__filter
+    position: relative
+    width: 360px
+    color: lighten(saturate($colorDark, 0.45), 30.00)
+    font-size: 14px
+    line-height: 17px
+    margin-right: 15px
+
+
+  &__filter>summary
+    display: block
+    padding: 15px
+
+  &__filter[open]
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+  &__filter[open]>summary
+    color: $colorRed
+
+  &__filter[open]>summary path
+    fill: $colorRed
+
+  &__img
+    width: 15px
+    height: 10px
+
+  &__choice
+    position: absolute
+    width: 360px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    background-color: $colorMain
+    z-index: 1
+
+  &__sub-filter
+    padding: 11px
+
+  &__sub-filter>summary
+    display: block
+    border-left: 5px solid $colorRed
+    border-bottom: 1px solid darken($colorLight, 0.39)
+    padding: 11px
+
+  &__sub-filter[open]>summary
+    color: $colorRed
+
+  &__list
+    background: $colorMain
+    padding: 14px 0 0 16px
+
+  &__elem
+    margin: 10px 0
+
+  &__link
+    color: lighten(saturate($colorDark, 0.45), 30.00)
+
+  &__select
+    outline: none
+    padding: 0
+
+  &__select[open] &__value[selected]
+    background-color: lighten(desaturate(adjust-hue($colorRed, -4), 56.18), 27.65)
+
+.pagination
+  display: flex
+  justify-content: center
+
+  &__list
+    display: flex
+    justify-content: center
+    padding: 13px 15px
+    border: 1px solid darken($colorLight, 0.39)
+
+  &__page
+    font-size: 16px
+    line-height: 19px
+  &__page:not(:last-child)
+    margin-right: 15px
+
+  &__link
+    color: darken($colorLight, 0.39)
+
+  &__link:hover
+    color: $colorRed
+
+  &__link:focus
+    color: $colorRed
+
+  &__link:active
+    color: $colorRed
+
+  &__link>i
+    color: $colorDark
+    font-size: 20px
+
+  &__link>i:hover
+    color: $colorRed
