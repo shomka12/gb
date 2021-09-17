@@ -99,38 +99,28 @@
                     rather than exceptional portals. </h3>
                 <h3 class="about-price">$561</h3>
             </div>
-            <div class="about-filter">
-                <details class="about-filter-title">
-                    <summary>
-                        CHOOSE COLOR <i class="fas fa-angle-down"></i>
-                    </summary>
-                    <ul>
-                        <li><label><input type="checkbox" /> Red</label>
-                        <li><label><input type="checkbox" /> White</label>
-                        <li><label><input type="checkbox" /> Black</label>
-                    </ul>
-                </details>
-                <details class="about-filter-title">
-                    <summary>
-                        CHOOSE SIZE<i class="fas fa-angle-down"></i>
-                    </summary>
-                    <ul>
-                        <li><label><input type="checkbox" /> XS</label>
-                        <li><label><input type="checkbox" /> S</label>
-                        <li><label><input type="checkbox" /> M</label>
-                        <li><label><input type="checkbox" /> L</label>
-                    </ul>
-                </details>
-                <details class="about-filter-title">
-                    <summary>
-                        QUANTITY<i class="fas fa-angle-down"></i>
-                    </summary>
-                    <ul>
-                        <li><input type="number" min="0" max="10" step="1" value="1">
-                    </ul>
-                </details>
-            </div>
-            <div class="about-cart">
+            
+            <section class="filters_catalog">
+                <div class="filters_catalog_wrap">
+                    <select class="filters_catalog_select" name="price" id="price">
+                        <option class="filters_catalog_label_product" selected>CHOOSE COLOR<i class="fas fa-angle-down"></i></option>
+                        <option class="filters_catalog_value" value="black">Black</option>
+                        <option class="filters_catalog_value" value="red">Red</option>
+                        <option class="filters_catalog_value" value="white">White</option>
+                    </select>
+                    <select class="filters_catalog_select" name="size" id="size">
+                        <option class="filters_catalog_label_product" selected>CHOOSE SIZE<i class="fas fa-angle-down"></i></option>
+                        <option class="filters_catalog_value" value="XS">XS</option>
+                        <option class="filters_catalog_value" value="S">S</option>
+                        <option class="filters_catalog_value" value="M">M</option>
+                        <option class="filters_catalog_value" value="L">L</option>
+                    </select>
+                    <select class="filters_catalog_select" name="price" id="price">
+                        <option class="filters_catalog_label_product" selected>QUANTITY<i class="fas fa-angle-down"></i></option>
+                    </select>
+                </div>
+            </section>
+        <div class="about-cart">
                 <button class="about-cart-btn"><svg class="about-cart-svg" viewBox="0 0 32 29"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
