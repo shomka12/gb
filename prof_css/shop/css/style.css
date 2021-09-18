@@ -1,66 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-ol,
-ul {
-  list-style-type: none;
-}
-
-button,
-input,
-textarea {
-  line-height: normal;
-  text-transform: none;
-  cursor: pointer;
-}
-
-.fas,
-input,
-svg {
-  cursor: pointer;
-}
-
-input:focus-within {
-  outline: none;
-}
-
-details > summary {
-  list-style: none;
-}
-
-summary,
-input {
-  border: 0;
-  outline: none;
-}
-
-summary:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
+@import url(reset.css);
 body {
   font-family: 'Lato', sans-serif;
   color: #222222;
@@ -87,11 +25,26 @@ header {
 
 .search {
   margin: 0 0 0 40px;
+  fill: #E8E8E8;
+}
+
+.search-img:hover {
+  -webkit-animation: scaling 1s infinite;
+          animation: scaling 1s infinite;
+  fill: #F16D7F;
 }
 
 .cart,
-.registr {
+.registr,
+.menu {
   margin: 0 0 0 33px;
+  fill: #E8E8E8;
+}
+
+.cart:hover,
+.registr:hover,
+.menu:hover {
+  fill: #F16D7F;
 }
 
 .logo:hover {
@@ -191,6 +144,13 @@ header {
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
+}
+
+.shopping-list-item {
+  width: 652px;
+  height: 306px;
+  -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+          filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 }
 
 .container {
@@ -788,6 +748,40 @@ header {
   border: 1px solid #FFFFFF;
   padding: 12px 14px;
   background-color: transparent;
+  fill: #E8E8E8;
+}
+
+.add-to-card:active {
+  color: #F26376;
+  border: 1px solid #F26376;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.add-to-card:active .cart-svg {
+  fill: #F26376;
+}
+
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes scaling {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
 }
 
 .cart-svg {
