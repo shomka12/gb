@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9185b9c55b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -68,7 +69,7 @@
             <div class="intro-wrap_catalog">
                 <h1 class="intro-text-left">NEW ARRIVALS </h1>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">HOME</a></li>
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">HOME</a></li>
                     <li class="breadcrumb-item" aria-current="page">/</li>
                     <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">MEN</a></li>
                     <li class="breadcrumb-item" aria-current="page">/</li>
@@ -135,43 +136,20 @@
                     <option class="filters__value">Vetements</option>
                 </optgroup>
             </select>
-            <!-- <div class="filters__select">
-                <details class="filters__label">
-                    <summary>SIZE</summary>
-                    <input class="filters__value" type="checkbox" id="XS" name="XS" value="XS">
-                    <label for="XS">XS</label><br>
-                    <input class="filters__value" type="checkbox" id="S" name="S" value="S">
-                    <label for="S">S</label><br>
-                    <input class="filters__value" type="checkbox" id="M" name="M" value="M">
-                    <label for="M">M</label><br>
-                    <input class="filters__value" type="checkbox" id="L" name="L" value="L">
-                    <label for="L">L</label><br>
-                </details>
-            </div> -->
-            <!-- <select class="filters__select" name="size" id="size">
-                <option class="filters__label" selected>SIZE<i class="fas fa-angle-down"></i></option>
-                <option class="filters__value" value="XS">XS</option>
-                <option class="filters__value" value="S">S</option>
-                <option class="filters__value" value="M">M</option>
-                <option class="filters__value" value="L">L</option>
-            </select> -->
-
             <section class="filter filters__select">
-                <!-- <div class="filter-size"> -->
                 <details class="filter-label">
-                    <summary>SIZE</summary>
+                    <summary>SIZE<i class="fas fa-angle-down"></i></summary>
                     <div class="filter-size">
-                        <input class="filter-value" type="checkbox" id="XS" name="XS" value="XS">
-                        <label for="XS">XS</label>
-                        <input class="filter-value" type="checkbox" id="S" name="S" value="S">
-                        <label for="S">S</label>
-                        <input class="filter-value" type="checkbox" id="M" name="M" value="M">
-                        <label for="M">M</label>
-                        <input class="filter-value" type="checkbox" id="L" name="L" value="L">
-                        <label for="L">L</label>
+                        <label><input class="filter-value" type="checkbox"><span
+                                class="filter-value-title">XS</span></label><br>
+                        <label><input class="filter-value" type="checkbox"><span
+                                class="filter-value-title">S</span></label><br>
+                        <label><input class="filter-value" type="checkbox"><span
+                                class="filter-value-title">M</span></label><br>
+                        <label><input class="filter-value" type="checkbox"><span
+                                class="filter-value-title">L</span></label>
                     </div>
                 </details>
-                <!-- </div> -->
             </section>
             <select class="filters__select" name="price" id="price">
                 <option class="filters__label" selected>PRICE<i class="fas fa-angle-down"></i></option>
@@ -181,8 +159,6 @@
             </select>
         </div>
     </div>
-
-
 
     <section class="products">
         <div class="wrap products-wrap">
