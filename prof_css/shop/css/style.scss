@@ -183,6 +183,7 @@ header {
     }
 
     &__filter {
+        // margin: 51px 0 64px 0;
         position: relative;
         width: 360px;
         color: #222222;
@@ -230,7 +231,6 @@ header {
         line-height: 17px;
         color: #6F6E6E;
         outline: none;
-        // padding: 0;
     }
 
     &__sub-filter>summary {
@@ -262,8 +262,36 @@ header {
     }
 }
 
+.filter {
+position: relative;
+// margin: 51px 0 64px 0;
+// &-size {
+//     position: relative;  
+// }
+&-size {
+    position: absolute;
+    width: 79px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background-color: #ffffff;
+    z-index: 1;
+    left: -20px;
+}
+
+&-value {
+    // position: absolute;
+    display: flex;
+    // justify-content: space-between;
+    padding: 14px 0 0 16px;
+}
+
+&-label>summary {
+    padding-top: 15px;
+}
+
+}
+
 .filters_catalog {
-    margin: 64px 0 48px 0;
+    margin: 51px 0 64px 0;
 
     &_wrap {
         display: flex;

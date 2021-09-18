@@ -293,8 +293,33 @@ header {
   background-color: #F16D7F;
 }
 
+.filter {
+  position: relative;
+}
+
+.filter-size {
+  position: absolute;
+  width: 79px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  background-color: #ffffff;
+  z-index: 1;
+  left: -20px;
+}
+
+.filter-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 0 0 16px;
+}
+
+.filter-label > summary {
+  padding-top: 15px;
+}
+
 .filters_catalog {
-  margin: 64px 0 48px 0;
+  margin: 51px 0 64px 0;
 }
 
 .filters_catalog_wrap {

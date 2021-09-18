@@ -135,13 +135,44 @@
                     <option class="filters__value">Vetements</option>
                 </optgroup>
             </select>
-            <select class="filters__select" name="size" id="size">
+            <!-- <div class="filters__select">
+                <details class="filters__label">
+                    <summary>SIZE</summary>
+                    <input class="filters__value" type="checkbox" id="XS" name="XS" value="XS">
+                    <label for="XS">XS</label><br>
+                    <input class="filters__value" type="checkbox" id="S" name="S" value="S">
+                    <label for="S">S</label><br>
+                    <input class="filters__value" type="checkbox" id="M" name="M" value="M">
+                    <label for="M">M</label><br>
+                    <input class="filters__value" type="checkbox" id="L" name="L" value="L">
+                    <label for="L">L</label><br>
+                </details>
+            </div> -->
+            <!-- <select class="filters__select" name="size" id="size">
                 <option class="filters__label" selected>SIZE<i class="fas fa-angle-down"></i></option>
                 <option class="filters__value" value="XS">XS</option>
                 <option class="filters__value" value="S">S</option>
                 <option class="filters__value" value="M">M</option>
                 <option class="filters__value" value="L">L</option>
-            </select>
+            </select> -->
+
+            <section class="filter filters__select">
+                <!-- <div class="filter-size"> -->
+                <details class="filter-label">
+                    <summary>SIZE</summary>
+                    <div class="filter-size">
+                        <input class="filter-value" type="checkbox" id="XS" name="XS" value="XS">
+                        <label for="XS">XS</label>
+                        <input class="filter-value" type="checkbox" id="S" name="S" value="S">
+                        <label for="S">S</label>
+                        <input class="filter-value" type="checkbox" id="M" name="M" value="M">
+                        <label for="M">M</label>
+                        <input class="filter-value" type="checkbox" id="L" name="L" value="L">
+                        <label for="L">L</label>
+                    </div>
+                </details>
+                <!-- </div> -->
+            </section>
             <select class="filters__select" name="price" id="price">
                 <option class="filters__label" selected>PRICE<i class="fas fa-angle-down"></i></option>
                 <option class="filters__value" value="low">Low</option>
@@ -150,6 +181,8 @@
             </select>
         </div>
     </div>
+
+
 
     <section class="products">
         <div class="wrap products-wrap">
