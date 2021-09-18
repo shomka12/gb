@@ -130,6 +130,9 @@ header {
 }
 
 .shopping {
+    display: flex;
+    justify-content: space-around;
+    // flex-wrap: wrap;
 
     &-cart-bottom {
         margin-top: 40px;
@@ -184,6 +187,31 @@ header {
             border: 1px solid #EAEAEA;
             text-align: left;
             width: 43px;
+        }
+    }
+
+    &-address {
+        display: flex;
+        justify-content: right;
+        width: 360px;
+        // outline: 1px solid #EF5B70;
+        height: 282px;
+        margin: 113px 0 57px 128px;
+
+        &-form-input {
+            height: 45px;
+            width: 100%;
+            border: 1px solid #A4A4A4;
+            margin: 20px 0 0 0;
+            font-size: 13px;
+            line-height: 16px;
+
+            &::placeholder {
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
         }
     }
 }
