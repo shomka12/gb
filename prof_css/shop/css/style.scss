@@ -712,7 +712,7 @@ $shift: 64px;
     
 
     &:hover {
-        animation: change-color 2s infinite alternate;
+        // animation: change-color 2s infinite alternate;
     }
 }
 
@@ -1011,12 +1011,3 @@ $shift: 64px;
     transform: rotate(360deg);
   }
 }
-
-  @keyframes change-color {
-    0% {
-        color: #FFFFFF;
-    }
-    100% {
-        color: #F16D7F;
-    }
-  }

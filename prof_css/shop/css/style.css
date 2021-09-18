@@ -790,11 +790,6 @@ header {
   background-color: transparent;
 }
 
-.add-to-card:hover {
-  -webkit-animation: change-color 2s infinite alternate;
-          animation: change-color 2s infinite alternate;
-}
-
 .cart-svg {
   margin: 0 11px 0 0;
   width: 26px;
@@ -1199,24 +1194,6 @@ header {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes change-color {
-  0% {
-    color: #FFFFFF;
-  }
-  100% {
-    color: #F16D7F;
-  }
-}
-
-@keyframes change-color {
-  0% {
-    color: #FFFFFF;
-  }
-  100% {
-    color: #F16D7F;
   }
 }
 /*# sourceMappingURL=style.css.map */
