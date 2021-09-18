@@ -131,13 +131,61 @@ header {
 
 .shopping {
 
+    &-cart-bottom {
+        margin-top: 40px;
+    }
+
     &-list-item {
         width: 652px;
         height: 306px;
         filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-
+        display: flex;
+        background-color: #FFFFFF;;
+        // margin: 96px 0 72px 0;
     }
+
+    &-text {
+        margin: 22px 0 62px 31px;
+    }
+
+    &-img {
+        width: 262px;
+    }
+
+    &-item {
+
+        &-price {
+            font-size: 22px;
+            line-height: 26px;
+            color: #EF5B70;
+        }
     
+        &-span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 26px;
+            color: #575757;
+            // gap: 6px;
+        }
+
+        &-title {
+            font-size: 24px;
+            line-height: 29px;
+            color: #222222;
+            margin: 0 0 42px 0;
+        }
+
+        &-quantity {
+            margin-left: 24px;
+            font-size: 18px;
+            line-height: 22px;
+            color: #656565;
+            border: 1px solid #EAEAEA;
+            text-align: left;
+            width: 43px;
+        }
+    }
 }
 
 .container {
