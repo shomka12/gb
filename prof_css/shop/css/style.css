@@ -791,7 +791,8 @@ header {
 }
 
 .add-to-card:hover {
-  padding: 10px 20px;
+  -webkit-animation: change-color 2s infinite alternate;
+          animation: change-color 2s infinite alternate;
 }
 
 .cart-svg {
@@ -1201,25 +1202,21 @@ header {
   }
 }
 
-@-webkit-keyframes slide-fwd-center {
+@-webkit-keyframes change-color {
   0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    color: #FFFFFF;
   }
   100% {
-    -webkit-transform: translateZ(160px);
-            transform: translateZ(160px);
+    color: #F16D7F;
   }
 }
 
-@keyframes slide-fwd-center {
+@keyframes change-color {
   0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    color: #FFFFFF;
   }
   100% {
-    -webkit-transform: translateZ(160px);
-            transform: translateZ(160px);
+    color: #F16D7F;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -709,9 +709,10 @@ $shift: 64px;
     border: 1px solid #FFFFFF;
     padding: 12px 14px;
     background-color: transparent;
+    
 
     &:hover {
-        padding: 10px 20px;
+        animation: change-color 2s infinite alternate;
     }
 }
 
@@ -1011,19 +1012,11 @@ $shift: 64px;
   }
 }
 
-@-webkit-keyframes slide-fwd-center {
+  @keyframes change-color {
     0% {
-              transform: translateZ(0);
+        color: #FFFFFF;
     }
     100% {
-              transform: translateZ(160px);
-    }
-  }
-  @keyframes slide-fwd-center {
-    0% {
-              transform: translateZ(0);
-    }
-    100% {
-              transform: translateZ(160px);
+        color: #F16D7F;
     }
   }
