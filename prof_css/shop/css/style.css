@@ -146,15 +146,18 @@ header {
   color: #F16D7F;
 }
 
+.cart {
+  margin: 0;
+}
+
 .shopping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .shopping-cart-bottom {
@@ -212,9 +215,15 @@ header {
 }
 
 .shopping-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 360px;
   height: 282px;
-  margin: 17px 0 0 128px;
 }
 
 .shopping-address-title {
@@ -278,7 +287,7 @@ header {
   width: 360px;
   height: 214px;
   background-color: #F5F3F3;
-  margin: -307px 0 0 0;
+  margin: 57px 0 0 0;
 }
 
 .shopping-checkout-rest {
@@ -292,7 +301,7 @@ header {
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
-  margin-left: 218px;
+  margin: 39px 0 0 218px;
 }
 
 .shopping-checkout-title-two {
@@ -300,7 +309,12 @@ header {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
-  margin-left: 153px;
+}
+
+.shopping-button-checkout {
+  padding: 15px 42px;
+  background: #F16D7F;
+  margin: 0 0 0 44px;
 }
 
 .container {
@@ -504,12 +518,33 @@ header {
   background-image: url(../img/for_women.jpg);
 }
 
+.offer-item-women:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 .offer-item-men {
   background-image: url(../img/for_men.jpg);
 }
 
+.offer-item-men:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 .offer-item-kids {
   background-image: url(../img/for_kids.jpg);
+}
+
+.offer-item-kids:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .offer-item-accesories {
@@ -517,6 +552,13 @@ header {
   width: 100%;
   height: 180px;
   margin: 30px 0 0 0;
+}
+
+.offer-item-accesories:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .offer-item-text-top {
