@@ -146,6 +146,15 @@ header {
   color: #F16D7F;
 }
 
+.cart2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .shopping {
   display: -webkit-box;
   display: -ms-flexbox;
