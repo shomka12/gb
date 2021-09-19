@@ -52,6 +52,22 @@ header {
 .intro {
     background-color: #F1E4E6;
 
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 764px;
+        background: url(../img/intro.png) no-repeat -226px bottom;
+        margin: 0 0 65px 0;
+    
+            &_catalog {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 148px;
+             }
+    }
+
     &-text {
         width: 410px;
         border-left: 12px solid#F16D7F;
@@ -86,21 +102,7 @@ header {
     background-color: #F8F3F4;
 }
 
-.intro-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    min-height: 764px;
-    background: url(../img/intro.png) no-repeat -226px bottom;
-    margin: 0 0 65px 0;
 
-    &_catalog {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 148px;
-    }
-}
 
 .breadcrumb {
     display: flex;
@@ -131,8 +133,9 @@ header {
 
 .shopping {
     display: flex;
-    justify-content: space-around;
-    // flex-wrap: wrap;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
     &-cart-bottom {
         margin-top: 40px;
@@ -191,12 +194,19 @@ header {
     }
 
     &-address {
-        display: flex;
-        justify-content: right;
+        // display: flex;
+        // justify-content: right;
         width: 360px;
         // outline: 1px solid #EF5B70;
         height: 282px;
-        margin: 113px 0 57px 128px;
+        margin: 17px 0 0 128px;
+
+        &-title {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
 
         &-form-input {
             height: 45px;
@@ -204,7 +214,8 @@ header {
             border: 1px solid #A4A4A4;
             margin: 20px 0 0 0;
             font-size: 13px;
-            line-height: 16px;
+            line-height: 17px;
+            padding: 0px 17px;
 
             &::placeholder {
                 font-weight: 300;
@@ -212,6 +223,7 @@ header {
                 line-height: 16px;
                 color: #B1B1B1;
             }
+
         }
     }
     &-button {
@@ -222,6 +234,23 @@ header {
         border: 1px solid #A4A4A4;
         padding: 10px 15px;
         margin-top: 23px;
+        background-color: #FFFFFF;
+
+    }
+
+    &-checkout {
+        width: 360px;
+        height: 214px;
+        background-color: #F5F3F3;
+        margin: -307px 0 0 0;
+        // right: 0;
+
+        &-rest {
+            margin: 21px 0 17px 43px;
+            background: #E2E2E2;
+            width: 275px;
+            height: 1px;
+        }
     }
 }
 
