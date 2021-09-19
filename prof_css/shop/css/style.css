@@ -274,6 +274,7 @@ header {
 }
 
 .shopping-checkout {
+  display: block;
   width: 360px;
   height: 214px;
   background-color: #F5F3F3;
@@ -285,6 +286,21 @@ header {
   background: #E2E2E2;
   width: 275px;
   height: 1px;
+}
+
+.shopping-checkout-title-one {
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-left: 218px;
+}
+
+.shopping-checkout-title-two {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-left: 153px;
 }
 
 .container {
