@@ -283,7 +283,6 @@ header {
 }
 
 .shopping-checkout {
-  display: block;
   width: 360px;
   height: 214px;
   background-color: #F5F3F3;
@@ -298,10 +297,11 @@ header {
 }
 
 .shopping-checkout-title-one {
+  display: block;
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
-  margin: 39px 0 0 218px;
+  padding: 39px 0 0 218px;
 }
 
 .shopping-checkout-title-two {
