@@ -146,10 +146,6 @@ header {
   color: #F16D7F;
 }
 
-.cart {
-  margin: 0;
-}
-
 .shopping {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,6 +154,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 652px;
 }
 
 .shopping-cart-bottom {
@@ -165,7 +162,6 @@ header {
 }
 
 .shopping-list-item {
-  width: 652px;
   height: 306px;
   -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
           filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
