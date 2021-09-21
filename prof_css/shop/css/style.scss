@@ -134,6 +134,10 @@ header {
     margin-bottom: 96px;
     // margin: 64px 0 96px 0;
 
+    .gender {
+        padding-left: 10px;
+    }
+
     &-form {
         width: 360px;
         display: flex;
@@ -148,8 +152,8 @@ header {
         }
 
         &-gender {
-            display: flex;
-            flex-direction: row;
+            // display: flex;
+            // flex-direction: row;
             margin-top: 31px;
             margin-bottom: 33px;
             // padding: 10px;
@@ -158,8 +162,12 @@ header {
             line-height: 13px;
             color: #000000;
 
-            &-title {
-                padding-left: 10px;
+            & label {
+                // padding-left: 50px;
+                display: inline-block;
+                cursor: pointer;
+                // position: relative;
+                padding-right: 20px;
             }
         }
 
@@ -168,8 +176,19 @@ header {
             width: 360px;
             height: 45px;
             background-color: #FFFFFF;
+            padding-left: 18px;
+            padding-right: 18px;
 
             &::placeholder {
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+
+            &-text {
+                margin-top: 18px;
+                margin-bottom: 39px;
                 font-weight: 300;
                 font-size: 13px;
                 line-height: 16px;
@@ -189,18 +208,69 @@ header {
             font-size: 14px;
             line-height: 17px;
             color: #FFFFFF;
+
+            &:hover {
+                background-color: #FFFFFF;
+                color: #F16D7F;
+                border: 1px solid #F16D7F;
+            }
+
+            &:hover &-arrow {
+                fill: #F16D7F;
+            }
+
+            &-arrow {
+                // width: 17px;
+                // height: 10px;
+                margin-left: 20px;
+                fill: #FFFFFF;
+            }
         }
     }
 
     &-text {
+
         margin-left: 128px;
         width: 652px;
         text-align: left;
+
+        &-title {
+            display: inline-block;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 22px;
+        }
+
+        &-text {
+            display: inline-block;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 21px;
+        }
+
+        &-p {
+            display: inline-block;
+            margin-bottom: 16px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &-vector {
+            margin-right: 22px;
+        }
     }
 }
 
 .section-shopping {
-    margin: 96px 0 128px 0;
+    margin-top: 96px;
+    margin-bottom: 128px;
+    // margin: 96px 0 128px 0;
     // margin-bottom: 128px;
     display: flex;
     flex-direction: row;
@@ -208,7 +278,7 @@ header {
 
 .section-shopping-rigth {
     height: 360px;
-    margin: 0 0 0 128px;
+    margin-left: 128px;
 }
 
 .btn {
@@ -221,6 +291,10 @@ header {
         height: 50px;
         border: 1px solid #A4A4A4;
         background-color: #FFFFFF;
+
+        &:hover {
+            background: #fff0ff;
+        }
     }
 
     &-rigth {
@@ -250,7 +324,11 @@ header {
         filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
         display: flex;
         background-color: #FFFFFF;
-        ;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
 
         &-price {
             font-size: 22px;
@@ -308,6 +386,10 @@ header {
             line-height: 17px;
             padding: 0px 17px;
 
+            &:hover {
+                background: #fff0ff;
+            }
+
             &::placeholder {
                 font-weight: 300;
                 font-size: 13px;
@@ -327,6 +409,11 @@ header {
         margin: 23px 0 0 0;
         background-color: #FFFFFF;
         text-align: center;
+
+        &:hover {
+            color: #F16D7F;
+            border: 1px solid #F16D7F;
+        }
     }
 
     &-checkout {
@@ -370,6 +457,12 @@ header {
             font-size: 16px;
             line-height: 19px;
             color: #FFFFFF;
+
+            &:hover {
+                background-color: #F5F3F3;
+                border: 1px solid #F16D7F;
+                color: #F16D7F;
+            }
         }
 
         &-cash {
@@ -839,6 +932,8 @@ $shift: 64px;
         &:hover {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             opacity: 1;
+            transform: scale(1.1);
+            transition: 0.3s;
         }
 
         &:hover .overlay {
@@ -1050,6 +1145,11 @@ $shift: 64px;
         text-align: center;
         width: 360px;
         height: 134px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
     }
 
     &-cart-title {
@@ -1114,6 +1214,10 @@ $shift: 64px;
         color: #222224;
         opacity: 0.67;
 
+        &:hover {
+            background: #dbdbdb;
+        }
+
         &::placeholder {
             color: #222224;
         }
@@ -1128,6 +1232,10 @@ $shift: 64px;
         color: #fff;
         font-size: 14px;
         line-height: 17px;
+
+        &:hover {
+            background: #e05c6e;
+        }
     }
 }
 

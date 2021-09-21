@@ -158,6 +158,10 @@ header {
   margin-bottom: 96px;
 }
 
+.registration .gender {
+  padding-left: 10px;
+}
+
 .registration-form {
   width: 360px;
   display: -webkit-box;
@@ -178,13 +182,6 @@ header {
 }
 
 .registration-form-gender {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin-top: 31px;
   margin-bottom: 33px;
   font-weight: 300;
@@ -193,8 +190,10 @@ header {
   color: #000000;
 }
 
-.registration-form-gender-title {
-  padding-left: 10px;
+.registration-form-gender label {
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 20px;
 }
 
 .registration-form-input {
@@ -202,6 +201,8 @@ header {
   width: 360px;
   height: 45px;
   background-color: #FFFFFF;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .registration-form-input::-webkit-input-placeholder {
@@ -232,6 +233,15 @@ header {
   color: #B1B1B1;
 }
 
+.registration-form-input-text {
+  margin-top: 18px;
+  margin-bottom: 39px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
 .registration-form-input-bottom {
   margin-top: 18px;
 }
@@ -245,14 +255,61 @@ header {
   color: #FFFFFF;
 }
 
+.registration-form-button:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+
+.registration-form-button:hover .registration-form-button-arrow {
+  fill: #F16D7F;
+}
+
+.registration-form-button-arrow {
+  margin-left: 20px;
+  fill: #FFFFFF;
+}
+
 .registration-text {
   margin-left: 128px;
   width: 652px;
   text-align: left;
 }
 
+.registration-text-title {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.registration-text-text {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.registration-text-p {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration-text-vector {
+  margin-right: 22px;
+}
+
 .section-shopping {
-  margin: 96px 0 128px 0;
+  margin-top: 96px;
+  margin-bottom: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +321,7 @@ header {
 
 .section-shopping-rigth {
   height: 360px;
-  margin: 0 0 0 128px;
+  margin-left: 128px;
 }
 
 .btn {
@@ -282,6 +339,10 @@ header {
   height: 50px;
   border: 1px solid #A4A4A4;
   background-color: #FFFFFF;
+}
+
+.btn-check:hover {
+  background: #fff0ff;
 }
 
 .btn-rigth {
@@ -319,6 +380,13 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #FFFFFF;
+}
+
+.cart-shopping-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .cart-shopping-item-price {
@@ -375,6 +443,10 @@ header {
   padding: 0px 17px;
 }
 
+.cart-shopping-address-form-input:hover {
+  background: #fff0ff;
+}
+
 .cart-shopping-address-form-input::-webkit-input-placeholder {
   font-weight: 300;
   font-size: 13px;
@@ -415,6 +487,11 @@ header {
   text-align: center;
 }
 
+.cart-shopping-button:hover {
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+
 .cart-shopping-checkout {
   width: 360px;
   height: 214px;
@@ -453,6 +530,12 @@ header {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+
+.cart-shopping-checkout-button:hover {
+  background-color: #F5F3F3;
+  border: 1px solid #F16D7F;
+  color: #F16D7F;
 }
 
 .cart-shopping-checkout-cash {
@@ -997,6 +1080,10 @@ header {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .products-list-item:hover .overlay {
@@ -1237,6 +1324,13 @@ header {
   height: 134px;
 }
 
+.feature-cart:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .feature-cart-title {
   font-size: 20px;
   line-height: 24px;
@@ -1315,6 +1409,10 @@ header {
   opacity: 0.67;
 }
 
+.subscribe-field:hover {
+  background: #dbdbdb;
+}
+
 .subscribe-field::-webkit-input-placeholder {
   color: #222224;
 }
@@ -1340,6 +1438,10 @@ header {
   color: #fff;
   font-size: 14px;
   line-height: 17px;
+}
+
+.subscribe-btn:hover {
+  background: #e05c6e;
 }
 
 .shopping {
