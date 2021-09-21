@@ -7,6 +7,10 @@ body {
 .wrap {
   width: 1140px;
   margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 header {
@@ -1070,7 +1074,7 @@ header {
 }
 
 .products-list-item {
-  width: 360px;
+  width: 31.5%;
   background: #F8F8F8;
   position: relative;
   overflow: hidden;
