@@ -146,9 +146,18 @@ header {
   color: #F16D7F;
 }
 
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .section-shopping {
-  margin-top: 96px;
-  margin-bottom: 128px;
+  margin: 96px 0 128px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +169,7 @@ header {
 
 .section-shopping-rigth {
   height: 360px;
-  margin-left: 128px;
+  margin: 0 0 0 128px;
 }
 
 .btn {
@@ -170,7 +179,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 72px;
+  margin: 72px 0 0 0;
 }
 
 .btn-check {
@@ -181,7 +190,7 @@ header {
 }
 
 .btn-rigth {
-  margin-left: 192px;
+  margin: 0 0 0 192px;
 }
 
 .cart-shopping {
@@ -196,7 +205,7 @@ header {
 }
 
 .cart-shopping-cart-bottom {
-  margin-top: 40px;
+  margin: 40px 0 0 0;
 }
 
 .cart-shopping-text {
@@ -239,7 +248,7 @@ header {
 }
 
 .cart-shopping-item-quantity {
-  margin-left: 24px;
+  margin: 0 0 0 24px;
   font-size: 18px;
   line-height: 22px;
   color: #656565;
@@ -251,8 +260,7 @@ header {
 .cart-shopping-address {
   width: 360px;
   height: 282px;
-  margin-top: 17px;
-  margin-bottom: 47px;
+  margin: 17px 0 47px 0;
 }
 
 .cart-shopping-address-title {
@@ -307,7 +315,7 @@ header {
   color: #A4A4A4;
   border: 1px solid #A4A4A4;
   padding: 10px 15px;
-  margin-top: 23px;
+  margin: 23px 0 0 0;
   background-color: #FFFFFF;
   text-align: center;
 }
@@ -330,8 +338,7 @@ header {
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
-  padding-top: 39px;
-  padding-right: 34px;
+  padding: 39px 34px 0 0;
 }
 
 .cart-shopping-checkout-title-two {
@@ -339,8 +346,7 @@ header {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
-  padding-top: 12px;
-  padding-right: 37px;
+  padding: 12px 37px 0 0;
 }
 
 .cart-shopping-checkout-button {
@@ -355,7 +361,7 @@ header {
 }
 
 .cart-shopping-checkout-cash {
-  padding-left: 18px;
+  padding: 0 0 0 18px;
 }
 
 .cart-shopping-checkout-cash-summ {
@@ -363,7 +369,7 @@ header {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
-  padding-left: 18px;
+  padding: 0 0 0 18px;
 }
 
 .container {
