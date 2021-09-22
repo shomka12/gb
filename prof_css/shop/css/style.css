@@ -11,7 +11,6 @@ body {
   padding-left: 16px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  outline: 1px solid red;
 }
 
 @media (max-width: 1200px) {
@@ -87,7 +86,7 @@ header {
 @media (max-width: 1200px) {
   .intro-wrap {
     height: 368px;
-    background: url(../img/intro.png) no-repeat -110px bottom;
+    background: url(../img/intro.png) no-repeat -25px bottom;
     background-size: contain;
   }
 }
@@ -106,10 +105,25 @@ header {
 }
 
 .intro-text {
-  width: 410px;
+  width: 405px;
   border-left: 12px solid #F16D7F;
   margin: 0 50px 0 0;
   padding: 0 0 0 14px;
+}
+
+@media (max-width: 1200px) {
+  .intro-text {
+    width: 311px;
+    margin: 0;
+  }
+  .intro-text .intro-text-big {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .intro-text .intro-text-small {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .intro-text-left {
@@ -753,6 +767,12 @@ header {
   margin-bottom: 96px;
 }
 
+@media (max-width: 1200px) {
+  .offer-wrap {
+    margin-bottom: 154px;
+  }
+}
+
 .offer-item {
   width: 360px;
   height: 260px;
@@ -766,6 +786,17 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .offer-item {
+    width: 232px;
+    height: 167px;
+    background-size: cover;
+  }
+  .offer-item-accesories {
+    height: 116px;
+  }
 }
 
 .offer-item-women {

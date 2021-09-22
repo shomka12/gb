@@ -11,7 +11,7 @@ body {
     padding-right: 16px;
     padding-left: 16px;
     box-sizing: content-box;
-    outline: 1px solid red;
+    // outline: 1px solid red;
 
     @media (max-width:1200px) {
         width: 735px;
@@ -68,7 +68,7 @@ header {
 
         @media (max-width:1200px) {
             height: 368px;
-            background: url(../img/intro.png) no-repeat -110px bottom;
+            background: url(../img/intro.png) no-repeat -25px bottom;
             background-size: contain;
         }
 
@@ -81,10 +81,26 @@ header {
     }
 
     &-text {
-        width: 410px;
+        width: 405px;
         border-left: 12px solid#F16D7F;
         margin: 0 50px 0 0;
         padding: 0 0 0 14px;
+
+        @media (max-width:1200px) {
+            width: 311px;
+            margin: 0;
+
+            .intro-text-big {
+                font-size: 44px;
+                line-height: 53px;
+            }
+
+            .intro-text-small {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+
 
         &-left {
             font-size: 24px;
@@ -656,6 +672,10 @@ header {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 96px;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 154px;
+    }
 }
 
 .offer-item {
@@ -665,6 +685,16 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    @media (max-width: 1200px) {
+        width: 232px;
+        height: 167px;
+        background-size: cover;
+
+        &-accesories {
+            height: 116px;
+        }
+    }
 
     &-women {
         background-image: url(../img/for_women.jpg);
@@ -921,6 +951,11 @@ $shift: 64px;
 
 .products {
     margin: 0 0 95px 0;
+
+    @media (max-width: 1200px) {
+        // margin: 0 0 154px 0;
+    }
+
     position: relative;
     // padding: 0 0 20px 0;
 
