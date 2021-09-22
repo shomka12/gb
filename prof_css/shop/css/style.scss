@@ -15,8 +15,14 @@ body {
 
     @media (max-width:1200px) {
         width: 735px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @media (max-width:768px) {
+        width: 375px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -28,6 +34,11 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 18px 0;
+
+    // @media (max-width:768px) {
+    //     // padding: 0;
+    //     justify-content: space-between;
+    // }
 }
 
 .search {
@@ -51,9 +62,25 @@ header {
     }
 }
 
+@media (max-width:768px) {
+
+    .cart {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+
+    .registr {
+        display: none;
+    }
+}
+
 .logo:hover {
     animation: logo 2s linear 0s 1 normal;
 }
+
+
 
 .intro {
     background-color: #F1E4E6;
@@ -70,6 +97,13 @@ header {
             height: 368px;
             background: url(../img/intro.png) no-repeat -25px bottom;
             background-size: contain;
+        }
+
+        @media (max-width:768px) {
+            height: 363px;
+            background: none;
+            justify-content: center;
+            margin: 0 0 64px 0;
         }
 
         &_catalog {
@@ -98,6 +132,21 @@ header {
             .intro-text-small {
                 font-size: 24px;
                 line-height: 29px;
+            }
+        }
+
+        @media (max-width:768px) {
+            width: 263px;
+            // text-align: center;
+
+            .intro-text-big {
+                font-size: 38px;
+                line-height: 46px;
+            }
+
+            .intro-text-small {
+                font-size: 20px;
+                line-height: 24px;
             }
         }
 
@@ -676,6 +725,10 @@ header {
     @media (max-width: 1200px) {
         margin-bottom: 154px;
     }
+
+    @media (max-width: 768px) {
+        margin-bottom: 64px;
+    }
 }
 
 .offer-item {
@@ -690,10 +743,12 @@ header {
         width: 232px;
         height: 167px;
         background-size: cover;
+    }
 
-        &-accesories {
-            height: 116px;
-        }
+    @media (max-width:768px) {
+        width: 344px;
+        height: 249px;
+        margin-bottom: 32px;
     }
 
     &-women {
@@ -728,6 +783,17 @@ header {
         width: 100%;
         height: 180px;
         margin: 30px 0 0 0;
+
+        @media (max-width: 1200px) {
+            height: 116px;
+        }
+
+        @media (max-width:768px) {
+            width: 343px;
+            height: 111px;
+            background-position: center;
+            margin: 0;
+        }
 
         &:hover {
             transform: scale(1.1);
@@ -972,23 +1038,37 @@ $shift: 64px;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 30px;
-    }
 
-    &-list-item {
-        width: 31.5%;
-        background: #F8F8F8;
-        position: relative;
-        overflow: hidden;
+        &-item {
+            width: 31.5%;
+            background: #F8F8F8;
+            position: relative;
+            overflow: hidden;
 
-        &:hover {
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            opacity: 1;
-            transform: scale(1.1);
-            transition: 0.3s;
-        }
+            @media (max-width: 1200px) {
+                width: 47%;
+                gap: 16px;
+            }
 
-        &:hover .overlay {
-            opacity: 1;
+            @media (max-width: 768px) {
+                width: 100%;
+                gap: 16px;
+            }
+
+            &:hover {
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                opacity: 1;
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+
+            &:hover .overlay {
+                opacity: 1;
+
+                @media (max-width: 768px) {
+                    opacity: 0;
+                }
+            }
         }
     }
 
@@ -1058,6 +1138,10 @@ $shift: 64px;
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
+
+    @media (max-width: 1200px) {
+        padding: 0 0 72px 0;
+    }
 }
 
 .add-to-card {
@@ -1197,6 +1281,11 @@ $shift: 64px;
         width: 360px;
         height: 134px;
 
+
+        @media (max-width: 1200px) {
+            margin-top: 48px;
+        }
+
         &:hover {
             transform: scale(1.1);
             transition: 0.3s;
@@ -1224,6 +1313,11 @@ $shift: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        padding-bottom: 64px;
+    }
 }
 
 .subscribe {
@@ -1327,6 +1421,20 @@ $shift: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    .subscribe {
+        padding: 64px 0 140px 0;
+    }
+
+    .subscribe-form-wrap {
+        margin: 48px 0 0 0;
+    }
 }
 
 .feedback {
@@ -1360,6 +1468,11 @@ $shift: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+
 }
 
 .copyrigth {
@@ -1368,10 +1481,19 @@ $shift: 64px;
     color: #FBFBFB;
     text-align: center;
     width: 332px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 9px;
+    }
 }
 
 .social {
     display: flex;
+
+    @media (max-width: 768px) {
+        padding-top: 43px;
+        padding-bottom: 40px;
+    }
 
     &_icon {
         background-color: #FFFFFF;
