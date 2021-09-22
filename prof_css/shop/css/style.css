@@ -11,6 +11,15 @@ body {
   padding-left: 16px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  outline: 1px solid red;
+}
+
+@media (max-width: 1200px) {
+  .wrap {
+    width: 735px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 header {
@@ -70,9 +79,17 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  min-height: 764px;
+  height: 764px;
   background: url(../img/intro.png) no-repeat -226px bottom;
   margin: 0 0 65px 0;
+}
+
+@media (max-width: 1200px) {
+  .intro-wrap {
+    height: 368px;
+    background: url(../img/intro.png) no-repeat -110px bottom;
+    background-size: contain;
+  }
 }
 
 .intro-wrap_catalog {

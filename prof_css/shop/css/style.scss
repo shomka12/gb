@@ -11,6 +11,13 @@ body {
     padding-right: 16px;
     padding-left: 16px;
     box-sizing: content-box;
+    outline: 1px solid red;
+
+    @media (max-width:1200px) {
+        width: 735px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 header {
@@ -55,9 +62,15 @@ header {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        min-height: 764px;
+        height: 764px;
         background: url(../img/intro.png) no-repeat -226px bottom;
         margin: 0 0 65px 0;
+
+        @media (max-width:1200px) {
+            height: 368px;
+            background: url(../img/intro.png) no-repeat -110px bottom;
+            background-size: contain;
+        }
 
         &_catalog {
             display: flex;
