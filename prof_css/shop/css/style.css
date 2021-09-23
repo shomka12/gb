@@ -595,7 +595,7 @@ header {
   position: absolute;
   width: 18px;
   height: 4px;
-  background: gray;
+  background: #575757;
 }
 
 .cart-shopping-button-close:before {
