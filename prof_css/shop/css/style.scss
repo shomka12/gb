@@ -500,6 +500,30 @@ header {
             color: #F16D7F;
             border: 1px solid #F16D7F;
         }
+
+        &-close {
+            cursor: pointer;
+            position: absolute;
+            top: 18px;
+            right: 28px;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                width: 18px;
+                height: 4px;
+                background: gray;
+            }
+
+            &:before {
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
     }
 
     &-checkout {
@@ -1050,6 +1074,10 @@ $shift: 64px;
         flex-wrap: wrap;
         gap: 30px;
 
+        @media (max-width: 1200px) {
+            flex-direction: row-reverse;
+        }
+
         &-item {
             width: 31.5%;
             background: #F8F8F8;
@@ -1068,6 +1096,18 @@ $shift: 64px;
             @media (max-width: 768px) {
                 width: 100%;
                 gap: 16px;
+
+                &-1 {
+                    display: block;
+                }
+
+                &-2 {
+                    display: none;
+                }
+
+                &-3 {
+                    display: block;
+                }
             }
 
             &:hover {
