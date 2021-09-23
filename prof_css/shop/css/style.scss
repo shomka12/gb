@@ -111,6 +111,11 @@ header {
             align-items: center;
             justify-content: space-between;
             min-height: 148px;
+
+            @media (max-width:768px) {
+                flex-direction: column;
+                justify-content: space-around;
+            }
         }
     }
 
@@ -653,6 +658,12 @@ header {
     &__select[open] &__value[selected] {
         background-color: #F16D7F;
     }
+
+    @media (max-width: 768px) {
+        &-title {
+            display: none;
+        }
+    }
 }
 
 .filter {
@@ -1048,6 +1059,10 @@ $shift: 64px;
             @media (max-width: 1200px) {
                 width: 47%;
                 gap: 16px;
+
+                &-3 {
+                    display: none;
+                }
             }
 
             @media (max-width: 768px) {

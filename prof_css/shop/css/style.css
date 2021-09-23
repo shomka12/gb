@@ -135,6 +135,17 @@ header {
   min-height: 148px;
 }
 
+@media (max-width: 768px) {
+  .intro-wrap_catalog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .intro-text {
   width: 405px;
   border-left: 12px solid #F16D7F;
@@ -734,6 +745,12 @@ header {
   background-color: #F16D7F;
 }
 
+@media (max-width: 768px) {
+  .filters-title {
+    display: none;
+  }
+}
+
 .filter {
   position: relative;
 }
@@ -1203,6 +1220,9 @@ header {
   .products-list-item {
     width: 47%;
     gap: 16px;
+  }
+  .products-list-item-3 {
+    display: none;
   }
 }
 
