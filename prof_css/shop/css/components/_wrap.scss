@@ -1,0 +1,20 @@
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    box-sizing: content-box;
+    // outline: 1px solid red;
+
+    @media (max-width:1200px) {
+        width: 735px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @media (max-width:768px) {
+        width: 375px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

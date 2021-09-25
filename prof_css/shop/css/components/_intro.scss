@@ -1,0 +1,101 @@
+.intro {
+    background-color: #F1E4E6;
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 764px;
+        background: url(../img/intro.png) no-repeat -226px bottom;
+        margin: 0 0 65px 0;
+
+        @media (max-width:1200px) {
+            height: 368px;
+            background: url(../img/intro.png) no-repeat -25px bottom;
+            background-size: contain;
+        }
+
+        @media (max-width:768px) {
+            height: 363px;
+            background: none;
+            justify-content: center;
+            margin: 0 0 64px 0;
+        }
+
+        &_catalog {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 148px;
+
+            @media (max-width:768px) {
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    &-text {
+        width: 405px;
+        border-left: 12px solid#F16D7F;
+        margin: 0 50px 0 0;
+        padding: 0 0 0 14px;
+
+        @media (max-width:1200px) {
+            width: 311px;
+            margin: 0;
+
+            .intro-text-big {
+                font-size: 44px;
+                line-height: 53px;
+            }
+
+            .intro-text-small {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+
+        @media (max-width:768px) {
+            width: 263px;
+            // text-align: center;
+
+            .intro-text-big {
+                font-size: 38px;
+                line-height: 46px;
+            }
+
+            .intro-text-small {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+
+
+        &-left {
+            font-size: 24px;
+            line-height: 29px;
+            color: #F16D7F;
+        }
+
+        &-big {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+        }
+
+        &-small {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        &-pink {
+            color: #F16D7F;
+        }
+    }
+}
+
+.intro2 {
+    background-color: #F8F3F4;
+}

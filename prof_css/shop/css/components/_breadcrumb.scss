@@ -1,0 +1,26 @@
+.breadcrumb {
+    display: flex;
+
+    &-link {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+    }
+}
+
+.breadcrumb-item:not(:last-child) {
+    padding: 0 3px 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumb-item:last-child {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}

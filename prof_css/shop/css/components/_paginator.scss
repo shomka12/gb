@@ -1,0 +1,50 @@
+.pagination {
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    width: 284px;
+    padding: 15px;
+    margin: 48px auto 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-check {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    &-number {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #C4C4C4;
+        text-decoration: none;
+
+        &-span {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #C4C4C4;
+        }
+
+        &-six {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #C4C4C4;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: #EF5B70;
+        }
+
+        &:not(:nth-child(9), :nth-child(8)) {
+            padding: 0 0 0 20px;
+        }
+
+        &:nth-child(9) {
+            padding: 0 20px 0 0;
+        }
+    }
+}

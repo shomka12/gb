@@ -1,0 +1,39 @@
+$shift: 64px;
+
+.slider {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: $shift;
+
+    &-img {
+        width: 597px;
+        height: 724px;
+    }
+
+    &-btn {
+        background-color: rgba(42, 42, 42, 0.15);
+        color: #fff;
+        padding: 10px;
+        position: absolute;
+
+        &:hover {
+            color: #F16D7F;
+            background-color: #F7F7F7;
+        }
+
+        &:active {
+            background-color: #000000;
+        }
+
+        &-left {
+            left: 0;
+        }
+
+        &-right {
+            right: 0;
+        }
+    }
+}
