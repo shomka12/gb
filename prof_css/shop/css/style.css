@@ -534,17 +534,31 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 72px 0 0 0;
+  text-align: center;
 }
 
 .btn-check {
-  width: 235px;
-  height: 50px;
   border: 1px solid #A4A4A4;
   background-color: #FFFFFF;
 }
 
+.btn-check a {
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
 .btn-check:hover {
-  background: #fff0ff;
+  border: 1px solid #EF5B70;
+}
+
+.btn-check:hover a {
+  color: #EF5B70;
 }
 
 .btn-rigth {
@@ -699,6 +713,11 @@ header {
   position: absolute;
   top: 18px;
   right: 28px;
+  opacity: 0.7;
+}
+
+.cart-shopping-button-close:hover {
+  opacity: 1;
 }
 
 .cart-shopping-button-close:before, .cart-shopping-button-close:after {
