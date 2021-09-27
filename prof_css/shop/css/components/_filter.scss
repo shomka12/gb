@@ -1,9 +1,17 @@
 .filters {
     margin: 51px 0 64px 0;
+    display: flex;
+    justify-content: space-between;
+
+    // @media (max-width: 768px) {
+    //     justify-content: end;
+    // }
+
+
 
     &-wrap {
         display: flex;
-        align-items: center;
+        // align-items: center;
     }
 
     &__filter {
@@ -12,6 +20,10 @@
         color: #222222;
         font-size: 14px;
         line-height: 17px;
+
+        // @media (max-width: 768px) {
+        //     display: none;
+        // }
     }
 
     &__filter>summary {

@@ -208,6 +208,7 @@ summary:hover {
   width: 162px;
   padding: 35px;
   height: 694px;
+  z-index: 100;
 }
 
 .main-nav-open {
@@ -1049,15 +1050,18 @@ summary:hover {
 
 .filters {
   margin: 51px 0 64px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .filters-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .filters__filter {
@@ -1275,6 +1279,7 @@ summary:hover {
 @media (max-width: 768px) {
   .offer-wrap {
     margin-bottom: 64px;
+    width: 343px;
   }
 }
 
