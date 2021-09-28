@@ -42,17 +42,23 @@
 
 @media (max-width:768px) {
 
-    .cart {
-        display: none;
-    }
-}
-
-@media (max-width:768px) {
-
+    .cart,
     .registr {
         display: none;
     }
+
+    .menu {
+        // margin: 0 auto;
+        margin-top: 10px;
+    }
 }
+
+// @media (max-width:768px) {
+
+//     .registr {
+//         display: none;
+//     }
+// }
 
 .logo:hover {
     animation: logo 2s linear 0s 1 normal;

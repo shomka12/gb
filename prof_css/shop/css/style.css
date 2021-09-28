@@ -122,14 +122,12 @@ summary:hover {
 }
 
 @media (max-width: 768px) {
-  .cart {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
+  .cart,
   .registr {
     display: none;
+  }
+  .menu {
+    margin-top: 10px;
   }
 }
 
@@ -1205,11 +1203,14 @@ summary:hover {
 }
 
 .filters__elem {
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .filters__link {
-  color: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
 }
 
 .filters__select[open] .filters__value[selected] {
@@ -1228,13 +1229,13 @@ summary:hover {
 
 .filter-size {
   position: absolute;
-  width: 79px;
+  width: 54px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   background-color: #ffffff;
   z-index: 1;
-  left: -8px;
-  margin: 5px 0;
+  left: -6px;
+  margin: 20px 0;
 }
 
 .filter-label {
@@ -1242,7 +1243,7 @@ summary:hover {
 }
 
 .filter-value {
-  margin: 7px 7px 11px 7px;
+  margin: 7px 7px 7px 7px;
 }
 
 .filter-value-title {

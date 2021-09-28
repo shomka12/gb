@@ -98,11 +98,17 @@
     }
 
     &__elem {
-        margin: 10px 0;
+        margin: 10px;
+        // margin: 7px 7px 7px 7px;
     }
 
     &__link {
-        color: #222222;
+        // color: #222222;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6F6E6E;
+        // margin: 7px 7px 7px 7px;
     }
 
     &__select[open] &__value[selected] {
@@ -121,12 +127,12 @@
 
     &-size {
         position: absolute;
-        width: 79px;
+        width: 54px;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         background-color: #ffffff;
         z-index: 1;
-        left: -8px;
-        margin: 5px 0;
+        left: -6px;
+        margin: 20px 0;
     }
 
     &-label {
@@ -134,7 +140,7 @@
     }
 
     &-value {
-        margin: 7px 7px 11px 7px;
+        margin: 7px 7px 7px 7px;
 
         &-title {
             font-family: 'Roboto', sans-serif;
