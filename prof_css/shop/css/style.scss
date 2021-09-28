@@ -11,4 +11,10 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media (max-width: 768px) {
+        gap: 24px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
 }
