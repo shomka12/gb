@@ -1,28 +1,23 @@
-// 'use strict';
+function task_1() {
+var Tc = parseInt(prompt('Введите температуру по Цельсию:', 36));
+var Tf = (9 / 5) * Tc + 32;
+alert('Температура по Фаренгейту: ' + Tf);
+}
 
-var money = prompt('Ваш бюджет на месяц?', 100000), 
-    time = prompt('Введите дату в формате YYYY-MM-DD', '2021-10-01'),
+function task_2() {
+    var x = parseInt(prompt('Введите переменную x:', 1));
+    var y = parseInt(prompt('Введите переменную y:', 1));
+    x = x + y;
+    y = x - y;
+    x = x - y;
+    alert('Переменная x = '+ x);
+    alert('Переменная y = '+ y);
 
-    appData = {
-    budget: money,
-    timeData: time,
-    expenses: 0,
-    optionalExpenses: 0,
-    income: [],
-    savings: false,
-},
+}
 
-answer_1 = 'products', answer_2 = 10000,
-
-expenses = {
-        answer_1 : answer_2,
-    };
-
-// expenses['products', 10000];
-
-for (var a = 1; a<3; a++) {
-        expenses.answer_1 = prompt('Введите обязательную статью расходов в этом месяце', 'products');
-        // expenses.answer_2 = prompt('Во сколько обойдется?', 10000);
-    };
-
-alert(expenses);
+function task_3() {
+    var admin, name = 'Василий';
+    admin = name;
+    alert('Переменная admin = ' + admin + '\nПеременная name = ' + name);
+    
+}
