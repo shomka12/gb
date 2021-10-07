@@ -55,12 +55,21 @@ summary:hover {
   cursor: pointer;
 }
 
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .wrap {
   margin: 0 auto;
   width: 1046px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  outline: 1px solid red;
+}
+
+.header {
+  height: 793px;
+  background: url(../img/header.png) no-repeat;
+  background-size: cover;
+  z-index: 0;
 }
 
 .nav-main {
@@ -80,15 +89,25 @@ summary:hover {
 
 .nav-main-logo {
   margin-right: 132px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
 }
 
 .nav-main-ul {
   margin-right: 21px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
 }
 
 .logo {
   width: 50%;
-  outline: 1px solid red;
 }
 
 .logo-big {
@@ -105,5 +124,62 @@ summary:hover {
   line-height: 30px;
   letter-spacing: 0.2px;
   color: #737373;
+  margin: 35px 0;
+}
+
+.logo-btn {
+  padding: 10px 36px;
+  border: 1px solid #0D5C63;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 37px;
+  color: #0D5C63;
+}
+
+.logo-btn-left {
+  margin-right: 10px;
+  border: none;
+  background: #FF7B47;
+  border-radius: 37px;
+  color: #FFFFFF;
+}
+
+.logo-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1px;
+  gap: 30px;
+  margin-top: -121px;
+}
+
+.logo-col-block {
+  width: 33.3%;
+  height: 242px;
+}
+
+.logo-col-block-white {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+
+.logo-col-block-rigth {
+  background: #0D5C63;
+  -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
