@@ -108,6 +108,7 @@ body {
 
 .logo {
   width: 50%;
+  margin-top: 80px;
 }
 
 .logo-big {
@@ -153,7 +154,7 @@ body {
           justify-content: space-between;
   z-index: 1px;
   gap: 30px;
-  margin-top: -121px;
+  margin-top: -111px;
 }
 
 .logo-col-block {
@@ -207,5 +208,12 @@ body {
   line-height: 32px;
   letter-spacing: 0.1px;
   color: #FFFFFF;
+}
+
+.better {
+  margin-top: -167px;
+  z-index: 0;
+  height: 658px;
+  background: #FAFAFA;
 }
 /*# sourceMappingURL=style.css.map */

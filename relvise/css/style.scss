@@ -51,6 +51,7 @@ body {
 .logo {
     width: 50%;
     // outline: 1px solid red;
+    margin-top: 80px;
 
     &-big {
         font-weight: 800;
@@ -91,7 +92,7 @@ body {
     justify-content: space-between;
     z-index: 1px;
     gap: 30px;
-    margin-top: -121px;
+    margin-top: -111px;
 
     &-block {
         width: 33.3%;
@@ -144,4 +145,12 @@ body {
             color: #FFFFFF;
         }
     }
+}
+
+.better {
+    // position: relative;
+    margin-top: -167px;
+    z-index: 0;
+    height: 658px;
+    background: #FAFAFA;
 }
