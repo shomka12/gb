@@ -3,6 +3,7 @@
 body {
     width: 1440px;
     margin: 0 auto;
+    z-index: 0;
 }
 
 .wrap {
@@ -17,7 +18,7 @@ body {
     background: url(../img/header.png) no-repeat;
     background-size: cover;
     // position: relative;
-    z-index: 0;
+
 }
 
 .nav-main {
@@ -95,7 +96,33 @@ body {
     &-block {
         width: 33.3%;
         height: 242px;
+        padding-left: 40px;
+        padding-top: 35px;
         // outline: 1px solid red;
+
+        &-text-small {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #737373;
+
+            &-rigth {
+                color: #FFFFFF;
+            }
+        }
+
+        &-text-big {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            color: #252B42;
+
+            &-rigth {
+                color: #FFFFFF;
+            }
+        }
 
         &-white {
             background: #FFFFFF;
@@ -116,7 +143,5 @@ body {
             letter-spacing: 0.1px;
             color: #FFFFFF;
         }
-
-
     }
 }

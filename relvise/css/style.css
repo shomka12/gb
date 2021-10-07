@@ -58,6 +58,7 @@ summary:hover {
 body {
   width: 1440px;
   margin: 0 auto;
+  z-index: 0;
 }
 
 .wrap {
@@ -69,7 +70,6 @@ body {
   height: 793px;
   background: url(../img/header.png) no-repeat;
   background-size: cover;
-  z-index: 0;
 }
 
 .nav-main {
@@ -159,6 +159,32 @@ body {
 .logo-col-block {
   width: 33.3%;
   height: 242px;
+  padding-left: 40px;
+  padding-top: 35px;
+}
+
+.logo-col-block-text-small {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.logo-col-block-text-small-rigth {
+  color: #FFFFFF;
+}
+
+.logo-col-block-text-big {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+
+.logo-col-block-text-big-rigth {
+  color: #FFFFFF;
 }
 
 .logo-col-block-white {
