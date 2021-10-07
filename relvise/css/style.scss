@@ -1,0 +1,24 @@
+@import '_reset.scss';
+
+.wrap {
+    margin: 0 auto;
+    width: 1046px;
+    box-sizing: content-box;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    height: 104px;
+
+    &-logo {
+        margin-right: 132px;
+    }
+
+    &-ul {
+        margin-right: 21px;
+        // padding: 21px;
+    }
+}
