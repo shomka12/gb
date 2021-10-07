@@ -4,6 +4,7 @@
     margin: 0 auto;
     width: 1046px;
     box-sizing: content-box;
+    outline: 1px solid red;
 }
 
 .nav-main {
@@ -20,5 +21,26 @@
     &-ul {
         margin-right: 21px;
         // padding: 21px;
+    }
+}
+
+.logo {
+    width: 50%;
+    outline: 1px solid red;
+
+    &-big {
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+        letter-spacing: 0.2px;
+        color: #252B42;
+    }
+
+    &-small {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: #737373;
     }
 }
