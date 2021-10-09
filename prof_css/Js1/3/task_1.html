@@ -1,0 +1,22 @@
+<script>
+
+    function isSimple(number) {
+        if (number < 2) return false;
+        var temp = 0
+        for (var x = 1; x <= number; x++) {
+            if ((number % x) == 0) {
+                temp++;
+            }
+        }
+        return temp == 2;
+    }
+
+    var i = 22;
+    while (i <= 100) {
+        if (isSimple(i)) {
+            console.log(i);
+        }
+        i++;
+    }
+
+</script>
