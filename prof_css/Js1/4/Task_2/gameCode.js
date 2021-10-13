@@ -50,12 +50,12 @@ function isEvent(w) {
 
 function isSwitch(s) {
     switch (s) {
-        case 1: // Второе действие
+        case 1: // Первое действие
             isEvent('d');
         case 2: // Второе действие
             isEvent('d');
             break;
-        case -1: // Второе действие
+        case -1: // Выход
             break;
         default:
             alert('Ошибка');
