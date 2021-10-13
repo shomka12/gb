@@ -1,9 +1,14 @@
 <script>
-    var num = {
-        'единицы': 5,
-        'десятки': 5,
-        'сотни': 2,
-    };
+    function numberToObject(number) {
+        var num = String(number),
+            numString = {
+                units: +num[2],
+                dozens: +num[1],
+                hundreds: +num[0],
+            }
 
-    console.log(num.единицы, num.десятки, num.сотни);
+        // if (number >= 0 || number < 999
+        return numString;
+    }
+    console.log(numberToObject(24));
 </script>
