@@ -3,23 +3,28 @@
 
 var event, ok;
 
-//var answers = [];
+var answers = [];
 
 isEvent('a');
 switch (event) {
     case 1: // Первое действие  - если в первом окне ввели 1 то открываем серию окон - окно 2
         isEvent('b');
         isSwitch(event)
+        answers.answer = 1;
+        answer.ev = events;
         break;
     case 2: // Первое действие    Если в 1 окне ввели 2 то переходим к 3 окну
         isEvent('c');
         isSwitch(event)
+        answers.answer = 2;
+        answer.ev = events;
         break;
     case -1: // Первое действие
         break;
     default:
         alert('Ошибка');
 }
+console.log(answers);
 alert('Спасибо за игру');
 
 //------------------------------------------
