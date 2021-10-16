@@ -20,7 +20,7 @@ b) Организовать функцию countBasketPrice, которая бу
     function countBasketPrice(goods) {
         var s = 0;
         for (var items of goods) {
-            console.log('Товар: ' + items.title + ', Цена товара: ' + items.price + ', Количество товара: ' + items.count);
+            // console.log('Товар: ' + items.title + ', Цена товара: ' + items.price + ', Количество товара: ' + items.count);
             s += items.count * items.price;
         }
         return s;
