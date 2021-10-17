@@ -735,6 +735,7 @@ summary:hover {
   display: -ms-flexbox;
   display: flex;
   background-color: #FFFFFF;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 768px) {

@@ -20,26 +20,109 @@
 // При загрузке страницы на базе данного массива генерировать вывод из него. HTML-код должен содержать только div id=”catalog” 
 // без вложенного кода. Весь вид каталога генерируется JS.
 
-var product = [
+var db = [
     {
-        title: 'Кроссовки',
-        price: 1000,
-        count: 5
+        id: 1,
+        title: 'MANGO PEOPLE1',
+        type: 'T-SHIRT',
+        photo: 'img/card_1.png',
+        color: 'red',
+        size: 'XL',
+        price: 50,
+        count: 5,
+        description: "Known for her sculptural takes on traditional tailoring, <br /> Australian <br />arbiter of cool Kym Ellery <br /> teams up with Moda Operandi."
     },
     {
-        title: 'Куртка',
-        price: 2000,
-        count: 2
+        id: 2,
+        title: 'MANGO PEOPLE2',
+        type: 'JACKET',
+        photo: 'img/card_3.png',
+        color: 'white',
+        size: 'M',
+        price: 100,
+        description: "Known for her sculptural takes on traditional tailoring, <br /> Australian <br />arbiter of cool Kym Ellery <br /> teams up with Moda Operandi."
+    },
+    {
+        id: 3,
+        title: 'MANGO PEOPLE3',
+        type: 'JACKET',
+        photo: 'img/card_3.png',
+        color: 'white',
+        size: 'M',
+        price: 100,
+        description: "Known for her sculptural takes on traditional tailoring, <br /> Australian <br />arbiter of cool Kym Ellery <br /> teams up with Moda Operandi."
     }
-]
+];
 
-function countBasketPrice(goods) {
-    var s = 0;
-    for (var items of product) {
-        // console.log('Товар: ' + items.title + ', Цена товара: ' + items.price + ', Количество товара: ' + items.count);
-        s += items.count * items.price;
+var basket = [];
+var storage = localStorage;
+
+
+
+function addCart(id) {
+    if (typeof storage['basket'] == "undefined"
+        || storage['basket'] == null
+        || storage['basket'] == ''
+    ) {
+        storage['basket'] = JSON.stringify([]);
     }
-    return s;
+    basket = JSON.parse(storage['basket']);
+    var state = true;
+    basket.forEach(function (item, i, arr) {
+        if (item.id == id) {
+            item.quantity++;
+            state = false;
+        }
+    });
+    if (basket.count == 0 || state) {
+        basket.push({
+            'id': id,
+            color: 'white',
+            size: 'M',
+            quantity: 1
+        });
+    }
+    storage['basket'] = JSON.stringify(basket);
 }
 
-// console.log('Стоимость товара в корзине: ' + countBasketPrice(goods));
+function products() {
+
+    var buffer = "";
+    var template = document.getElementById('card-product');
+    var elem = document.getElementById('products-list');
+    //elem.innerHTML = template.innerHTML;
+
+    db.forEach(function (item, i, arr) {
+        var tpl = template.innerHTML;
+        tpl = tpl.replace("%photo%", item.photo);
+        tpl = tpl.replace("%id%", item.id);
+        tpl = tpl.replace("%title%", item.title);
+        tpl = tpl.replace("%description%", item.description);
+        tpl = tpl.replace("%price%", item.price);
+        buffer += tpl;
+    });
+    elem.innerHTML = buffer;
+}
+
+function cart() {
+    var buffer = "";
+    var template = document.getElementById('card-product');
+    var elem = document.getElementById('cart-shopping');
+
+
+}
+
+//bootstrap();
+
+
+// var basket = [product[1], product[2]];
+
+/*function countBasketPrice(goods) {
+    var s = 0;
+    for (var items of basket) {
+        s += basket.count * basket.price;
+    }
+    return s;
+}*/
+
+// console.log()

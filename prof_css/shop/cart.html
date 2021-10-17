@@ -14,6 +14,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/9185b9c55b.js" crossorigin="anonymous"></script>
+    <script type="text/html" id="card-product">
+        <div class="cart-shopping-item">
+            <img src="img/card_3.png" alt="cart-shopping-card-1" class="cart-shopping-img">
+            <div class="cart-shopping-text">
+                <button class="cart-shopping-button-close"></button>
+                <h3 class="cart-shopping-item-title">%title%</h3>
+                <p class="cart-shopping-item-span">Price: <span
+                        class="cart-shopping-item-price">$%price%</span><br>
+                    Color: Red<br>
+                    Size: Xl<br></p>
+                <label class="cart-shopping-item-span">Quantity:<input class="cart-shopping-item-quantity"
+                        type="number" max="10" min="1" value="%quantity%"></label>
+            </div>
+        </div>
+    </script>
 </head>
 
 <body>
@@ -104,9 +119,23 @@
     <section class="section-shopping">
         <div class="wrap">
             <div class="shopping-wrap">
-                <div class="cart-shopping">
+                <div class="cart-shopping" id="cart-shopping">
+
+                    <!-- <div class="cart-shopping-item">
+                        <img src="img/card_3.png" alt="cart-shopping-card-1" class="cart-shopping-img">
+                        <div class="cart-shopping-text">
+                            <button class="cart-shopping-button-close"></button>
+                            <h3 class="cart-shopping-item-title">MANGO PEOPLE <br>T-SHIRT</h3>
+                            <p class="cart-shopping-item-span">Price: <span
+                                    class="cart-shopping-item-price">$300</span><br>
+                                Color: Red<br>
+                                Size: Xl<br></p>
+                            <label class="cart-shopping-item-span">Quantity:<input class="cart-shopping-item-quantity"
+                                    type="number" max="10" min="1" value="1"></label>
+                        </div>
+                    </div>
                     <div class="cart-shopping-item">
-                        <img src="img/shopping-cart-img-1.png" alt="cart-shopping-card-1" class="cart-shopping-img">
+                        <img src="img/card_3.png" alt="cart-shopping-card-1" class="cart-shopping-img">
                         <div class="cart-shopping-text">
                             <button class="cart-shopping-button-close"></button>
                             <h3 class="cart-shopping-item-title">MANGO PEOPLE <br>T-SHIRT</h3>
@@ -118,8 +147,8 @@
                                     type="number" max="10" min="1" value="1"></label>
                         </div>
                     </div>
-                    <div class="cart-shopping-item cart-shopping-cart-bottom">
-                        <img src="img/shopping-cart-img-2.png" alt="cart-shopping-card-4" class="cart-shopping-img">
+                    <div class="cart-shopping-item">
+                        <img src="img/card_3.png" alt="cart-shopping-card-1" class="cart-shopping-img">
                         <div class="cart-shopping-text">
                             <button class="cart-shopping-button-close"></button>
                             <h3 class="cart-shopping-item-title">MANGO PEOPLE <br>T-SHIRT</h3>
@@ -131,6 +160,21 @@
                                     type="number" max="10" min="1" value="1"></label>
                         </div>
                     </div>
+                    <div class="cart-shopping-item">
+                        <img src="img/card_2_catalog.png" alt="cart-shopping-card-4" class="cart-shopping-img">
+                        <div class="cart-shopping-text">
+                            <button class="cart-shopping-button-close"></button>
+                            <h3 class="cart-shopping-item-title">MANGO PEOPLE <br>T-SHIRT</h3>
+                            <p class="cart-shopping-item-span">Price: <span
+                                    class="cart-shopping-item-price">$300</span><br>
+                                Color: Red<br>
+                                Size: Xl<br></p>
+                            <label class="cart-shopping-item-span">Quantity:<input class="cart-shopping-item-quantity"
+                                    type="number" max="10" min="1" value="1"></label>
+                        </div>
+                    </div>
+                -->
+
                     <div class="btn">
                         <div class="btn-check">
                             <a href="#" class="btn-check-a">CLEAR SHOPPING CART</a>
@@ -201,6 +245,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/basket.js"></script>
+    <script>cart();</script>
 
 </body>
 
