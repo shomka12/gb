@@ -16,14 +16,14 @@
     <script src="https://kit.fontawesome.com/9185b9c55b.js" crossorigin="anonymous"></script>
     <script type="text/html" id="card-product">
         <div class="cart-shopping-item">
-            <img src="img/card_3.png" alt="cart-shopping-card-1" class="cart-shopping-img">
+            <img src="%photo%" alt="cart-shopping-card-1" class="cart-shopping-img">
             <div class="cart-shopping-text">
                 <button class="cart-shopping-button-close"></button>
                 <h3 class="cart-shopping-item-title">%title%</h3>
                 <p class="cart-shopping-item-span">Price: <span
                         class="cart-shopping-item-price">$%price%</span><br>
-                    Color: Red<br>
-                    Size: Xl<br></p>
+                    Color: %color%<br>
+                    Size: %size%<br></p>
                 <label class="cart-shopping-item-span">Quantity:<input class="cart-shopping-item-quantity"
                         type="number" max="10" min="1" value="%quantity%"></label>
             </div>
@@ -120,7 +120,9 @@
         <div class="wrap">
             <div class="shopping-wrap">
                 <div class="cart-shopping" id="cart-shopping">
+                    <div class="basket" id="basket">
 
+                    </div>
                     <!-- <div class="cart-shopping-item">
                         <img src="img/card_3.png" alt="cart-shopping-card-1" class="cart-shopping-img">
                         <div class="cart-shopping-text">
@@ -177,10 +179,10 @@
 
                     <div class="btn">
                         <div class="btn-check">
-                            <a href="#" class="btn-check-a">CLEAR SHOPPING CART</a>
+                            <a href="#" class="btn-check-a" onclick="onClearBasket()">CLEAR SHOPPING CART</a>
                         </div>
                         <div class="btn-check btn-rigth">
-                            <a href="product.html" class="btn-check-a">CONTINUE SHOPPING</a>
+                            <a href="catalog.html" class="btn-check-a">CONTINUE SHOPPING</a>
                         </div>
                     </div>
                 </div>
@@ -198,9 +200,9 @@
                     </div>
                     <div class="cart-shopping-checkout">
                         <span class="cart-shopping-checkout-title-one">SUB TOTAL<span
-                                class="cart-shopping-checkout-cash">$900</span></span><br>
+                                class="cart-shopping-checkout-cash" id="cash">%cash%</span></span><br>
                         <span class="cart-shopping-checkout-title-two">GRAND TOTAL<span
-                                class="cart-shopping-checkout-cash-summ">$900</span></span>
+                                class="cart-shopping-checkout-cash-summ" id="totalSumm">$%totalSumm%</span></span>
                         <div class="cart-shopping-checkout-rest"></div>
                         <button class="cart-shopping-checkout-button">PROCEED TO CHECKOUT</button>
                     </div>
@@ -245,6 +247,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/basket.js"></script>
+    <script src="js/db.js"></script>
     <script>cart();</script>
 
 </body>

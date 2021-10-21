@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    div
+    <script>
+        var db = [
+            {
+                id: 1,
+                title: 'MANGO PEOPLE1',
+                type: 'T-SHIRT',
+                photo: 'img/card_1.png',
+                color: 'red',
+                size: 'XL',
+                price: 50,
+                count: 5,
+                description: "Known for her sculptural takes on traditional tailoring, <br /> Australian <br />arbiter of cool Kym Ellery <br /> teams up with Moda Operandi."
+            },
+            {
+                id: 2,
+                title: 'MANGO PEOPLE2',
+                type: 'JACKET',
+                photo: 'img/card_3.png',
+                color: 'white',
+                size: 'M',
+                price: 100,
+                description: "Known for her sculptural takes on traditional tailoring, <br /> Australian <br />arbiter of cool Kym Ellery <br /> teams up with Moda Operandi."
+            },
+            {
+                id: 3,
+                title: 'MANGO PEOPLE3',
+                type: 'JACKET',
+                photo: 'img/card_3.png',
+                color: 'white',
+                size: 'M',
+                price: 100,
+                description: "Known for her sculptural takes on traditional tailoring, <br /> Australian <br />arbiter of cool Kym Ellery <br /> teams up with Moda Operandi."
+            }
+        ];
+        let searchTerm = 2;
+        // let cityId = db.find(item => item.id === searchTerm).photo;
+        console.log(db.find(item => item.id === 1).photo);
+    </script>
 </body>
+
 </html>

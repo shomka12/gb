@@ -1,0 +1,33 @@
+* {
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    width: 500px;
+    height: 600px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.slider {
+    width: 360px;
+    height: 420px;
+    border: 5px solid #515151;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+button {
+    width: 70px;
+}
+
+.slider-btn-left {
+    margin-right: 120px;
+}
+
+.img {
+    min-width: 100%;
+    min-height: 100%;
+}
