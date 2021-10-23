@@ -109,21 +109,34 @@ function move() {
     // Определяем новую точку
     if (direction == 'x-') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x - 1))[0];
+        if (new_unit == undefined) {
+            new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (FIELD_SIZE_X - 1))[0];
+        }
     }
     else if (direction == 'x+') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (coord_x + 1))[0];
+        if (new_unit == undefined) {
+            new_unit = document.getElementsByClassName('cell-' + (coord_y) + '-' + (0))[0];
+        }
     }
     else if (direction == 'y+') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y - 1) + '-' + (coord_x))[0];
+        if (new_unit == undefined) {
+            new_unit = document.getElementsByClassName('cell-' + (FIELD_SIZE_Y - 1) + '-' + (coord_x))[0];
+        }
     }
     else if (direction == 'y-') {
         new_unit = document.getElementsByClassName('cell-' + (coord_y + 1) + '-' + (coord_x))[0];
+        if (new_unit == undefined) {
+            new_unit = document.getElementsByClassName('cell-' + (0) + '-' + (coord_x))[0];
+        }
     }
+    // console
     // haveObstacle(new_unit);
     // Проверки
     // 1) new_unit не часть змейки
     // 2) Змейка не ушла за границу поля
-    //console.log(new_unit);
+    console.log(new_unit);
     if (!isSnakeUnit(new_unit) && new_unit !== undefined) {
         // Добавление новой части змейки
         new_unit.setAttribute('class', new_unit.getAttribute('class') + ' snake-unit');
