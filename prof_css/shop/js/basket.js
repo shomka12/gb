@@ -57,6 +57,7 @@ function cart() {
     basket = JSON.parse(storage['basket']);
     var buffer = "";
     var template = document.getElementById('card-product');
+    // var cartItem = document.getElementsByClassName('cart-shopping-item');
     var elem = document.getElementById('basket');
     var totalSumm = document.getElementById('totalSumm');
     var cash = document.getElementById('cash');
@@ -64,6 +65,9 @@ function cart() {
 
     basket.forEach(function (item, i, arr) {
         var tpl = template.innerHTML;
+        // cartItem.setAttribute('id', item.id);
+        // cartItem.id = 'id1';
+        // tpl = tpl.replace("%id%", item.id);
         tpl = tpl.replace("%photo%", item.photo);
         tpl = tpl.replace("%id%", item.id);
         tpl = tpl.replace("%title%", item.title);
@@ -83,6 +87,12 @@ function cart() {
     cash.innerHTML = cash.innerHTML.replace("%cash%", quan);
 
     elem.innerHTML = buffer;
+}
+
+function onQuantity(value) {
+    var cartItem = document.getElementsByClassName('.cart-shopping-item');
+
+    console.log(value, cartItem.getat)
 }
 
 function onClearBasket() {

@@ -15,7 +15,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/9185b9c55b.js" crossorigin="anonymous"></script>
     <script type="text/html" id="card-product">
-        <div class="cart-shopping-item">
+        <div class="cart-shopping-item" id="%id%">
             <img src="%photo%" alt="cart-shopping-card-1" class="cart-shopping-img">
             <div class="cart-shopping-text">
                 <button class="cart-shopping-button-close"></button>
@@ -25,7 +25,7 @@
                     Color: %color%<br>
                     Size: %size%<br></p>
                 <label class="cart-shopping-item-span">Quantity:<input class="cart-shopping-item-quantity"
-                        type="number" max="10" min="1" value="%quantity%"></label>
+                        type="number" max="10" min="1" value="%quantity%" onchange="onQuantity(value)"></label>
             </div>
         </div>
     </script>
