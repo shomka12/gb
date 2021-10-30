@@ -1,0 +1,24 @@
+output {
+  color: #8e8e8e;
+  border: 1px solid #8e8e8e;
+  border-radius: 4px;
+  padding: .5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+output span {
+  color: #eee;
+}
+
+output:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */

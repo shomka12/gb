@@ -131,11 +131,6 @@ summary:hover {
   }
 }
 
-.logo:hover {
-  -webkit-animation: logo 2s linear 0s 1 normal;
-          animation: logo 2s linear 0s 1 normal;
-}
-
 @-webkit-keyframes logo {
   0% {
     -webkit-transform: rotate(0deg);
