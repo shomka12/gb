@@ -30,7 +30,7 @@ class Hamburger {
             case 'cheese': { summ += 10; break; }
             case 'potato': { summ += 15; break; }
         }
-        this.getToppings().forEach(function (item, i, arr) {
+        this.getToppings().forEach(item => {
             switch (item) {
                 case 'seasoning': { summ += 15; break; }
                 case 'mayonnaise': { summ += 20; break; }
@@ -46,7 +46,7 @@ class Hamburger {
             case 'cheese': { calories += 20; break; }
             case 'potato': { calories += 10; break; }
         }
-        this.getToppings().forEach(function (item, i, arr) {
+        this.getToppings().forEach(item => {
             if (item == 'mayonnaise') calories += 5;
         });
         return calories;
@@ -55,14 +55,9 @@ class Hamburger {
 
 let hamburger = new Hamburger();
 
-hamburger.size = 'small';
-hamburger.stuffing = 'salad';
+hamburger.size = 'big';
+hamburger.stuffing = 'cheese';
 hamburger.addTopping('seasoning');
 hamburger.addTopping('mayonnaise');
-console.log(`Вы заказали: ${hamburger.getSize()} гамбургер, стоимостью: ${hamburger.calculatePrice()} рублей, с начинкой: ${hamburger.getStuffing()}, с добавками: ${hamburger.getToppings().join()} и каллорийностью: ${hamburger.calculateCalories()}`);
-// console.log(hamburger.getToppings())
 // hamburger.removeTopping('seasoning');
-// console.log(hamburger.getToppings());
-// console.log(hamburger.calculatePrice());
-// console.log(hamburger.getSize());
-// console.log(hamburger.calculateCalories());
+console.log(`Вы заказали: ${hamburger.getSize()} гамбургер, стоимостью: ${hamburger.calculatePrice()} рублей, с начинкой: ${hamburger.getStuffing()}, с добавками: ${hamburger.getToppings().join()} и каллорийностью: ${hamburger.calculateCalories()}`);
