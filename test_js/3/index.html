@@ -1,0 +1,36 @@
+<script>
+    class Worker {
+        constructor(name, surname, rate, days) {
+            this.name = name;
+            this.surname = surname;
+            this.rate = rate;
+            this.days = days;
+        }
+
+        getSalary() {
+            return this.rate * this.days;
+        }
+
+        setRate(rate) {
+            this.rate = rate;
+        }
+
+        getRate() {
+            return this.rate;
+        }
+    }
+
+    var worker = new Worker('Иван', 'Иванов', 10, 31);
+
+    console.log(worker.name); //выведет 'Иван'
+    console.log(worker.surname); //выведет 'Иванов'
+    console.log(worker.rate); //выведет 10
+    console.log(worker.days); //выведет 31
+    console.log(worker.getSalary()); //выведет 310 - то есть 10*31
+
+    var worker2 = new Worker('Вася', 'Васечкин', 15, 10);
+    console.log(worker.getSalary() + worker2.getSalary());
+    worker.setRate(20);
+    console.log(worker.getRate());
+
+</script>
