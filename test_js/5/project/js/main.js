@@ -7,38 +7,43 @@ const app = new Vue({
         products: [],
         filtered: [],
         imgCatalog: 'https://via.placeholder.com/200x150',
-        userSearch: '',
+        searchLine: '',
         show: false
     },
     methods: {
-        filter(value){
-         const regexp = new RegExp(value, 'i');
-         this.filtered = this.products.filter(product => regexp.test(product.product_name));
+        filterGoods(value) {
+            const regexp = new RegExp(value, 'i');
+            this.filtered = this.products.filter(product => regexp.test(product.product_name));
+            console.log(this.filtered);
+            // for (let el of data) {
+            //     this.products.push(el);
+            // }
+
         },
-        getJson(url){
+        getJson(url) {
             return fetch(url)
                 .then(result => result.json())
                 .catch(error => {
                     console.log(error);
                 })
         },
-        addProduct(product){
+        addProduct(product) {
             console.log(product.id_product);
         }
     },
-    mounted(){
-       this.getJson(`${API + this.catalogUrl}`)
-           .then(data => {
-               for(let el of data){
-                   this.products.push(el);
-               }
-           });
-        this.getJson(`getProducts.json`)
+    mounted() {
+        this.getJson(`${API + this.catalogUrl}`)
             .then(data => {
-                for(let el of data){
+                for (let el of data) {
                     this.products.push(el);
                 }
-            })
+            });
+        this.getJson(`getProducts.json`)
+            .then(data => {
+                for (let el of data) {
+                    this.products.push(el);
+                }
+            });
     }
 })
 
