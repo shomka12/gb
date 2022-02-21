@@ -1,3 +1,5 @@
+import styles from './message.modules.css'
+
 export const Message = (props) => {
-  return <div>{props.text}</div>;
+  return <div className={styles.message}>{props.text}</div>;
 };
