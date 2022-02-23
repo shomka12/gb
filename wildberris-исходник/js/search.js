@@ -1,8 +1,16 @@
-const btnSearch = document.querySelector('.btn-outline-secondary');
-const inputSearch = document.querySelector('.search-block > .form-control');
+const search = function () {
+    const btnSearch = document.querySelector('.search-block > button');
+    const inputSearch = document.querySelector('.search-block > input');
 
-btnSearch.addEventListener('click',  function () {
-    console.log(inputSearch.value);
-});
+    // inputSearch.addEventListener('input', (event) => {
+    //     console.log(event.target.value)
+// })
+
+    btnSearch.addEventListener('click',  () => {
+        console.log(inputSearch.value);
+    });
+}
+
+search()
 
 
