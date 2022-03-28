@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import {Message} from './components/Message/message';
 
-const text = 'Привет'
-const text2 = 'Мир'
+// const text = 'Привет'
+// const text2 = 'Мир'
 
 ReactDOM.render(
   <React.StrictMode>
     <App/>
-    <Message textH1={text} textH2={text2}/>
+    <Message/>
   </React.StrictMode>,
   document.getElementById('root')
 );
