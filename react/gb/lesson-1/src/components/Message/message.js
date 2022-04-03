@@ -1,12 +1,5 @@
-import {useState, useEffect} from 'react'
-// export const Message = ({textH1,textH2}) => {
-//     return (
-//         <div>
-//             <h1>{textH1}</h1>
-//             <h2>{textH2}</h2>
-//             </div>
-//     )
-// }
+import {useState, useEffect} from 'react';
+import {Container, Paper, Button, TextField } from '@mui/material';
 
 export const Message = () => {
     const [messageList, setMessageList] = useState([])
@@ -52,15 +45,32 @@ useEffect(() => {
 }, [messageList])
 
 return (
-    <div>
+    <Container sx={{
+        display:'flex',
+        alignItems:'center',
+        height: '100vh'
+      }}
+      maxWidth='sm'>
+        <Paper 
+          sx={{
+            margin:2,
+            padding:3,
+            height: '80vh',
+            width: '67%',
+            boxShadow: 2,
+          }}>
         <form onSubmit={onSubmitMessage}>
-            <input 
+            <TextField 
             onChange={onChangeMessageInput}
             placeholder='type message'
             value={value}
             type='text'
+            size="small"
             />
-            <button>send</button>
+            <Button 
+                type='submit' 
+                variant='contained'>send
+            </Button>
         </form>
         <ul>
             {
@@ -71,7 +81,8 @@ return (
                 ))
             }
         </ul>
-    </div>
+    </Paper>
+    </Container>
 
 )
 }

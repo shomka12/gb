@@ -1,5 +1,4 @@
-import {Container} from '@mui/material';
-import { Paper } from '@mui/material';
+import {Container, Paper, Button, TextField, Select, MenuItem, Checkbox } from '@mui/material';
 
 
 import { useCreateTaskForm } from './hooks/useCreateTaskForm';
@@ -19,28 +18,49 @@ const { handleSubmit, onChangeInput, inputValue} = useCreateTaskForm({onSubmit: 
 const {filteredList} = useTaskFilteredByStatus({list: taskList, filterStatus})
 
   return (
-    <Container maxWidth='xs'>
+    <Container sx={{
+      display:'flex',
+      alignItems:'center',
+      height: '100vh'
+    }}
+    maxWidth='sm'>
       <Paper 
-      sx={{
-        padding:1,
-        height:800,
-        boxShadow: 2,
-      }}>
+        sx={{
+          margin:2,
+          padding:3,
+          height: '80vh',
+          width: '67%',
+          boxShadow: 2,
+        }}>
               <form onSubmit={handleSubmit}>
-          <input value={inputValue} onChange={onChangeInput} type="text" />
-          <button type='submit'>save</button>
+          <TextField 
+            value={inputValue} 
+            onChange={onChangeInput} 
+            type="text" 
+            label="Ввести текст" 
+            variant="outlined" 
+            size="small"/>
+          <Button 
+            type='submit' 
+            variant='contained'
+            >Добавить
+          </Button>
       </form>
-      <select value={filterStatus} onChange={onChangeStatus}>
-        <option value={FILTER_BY_STATUS_ALL}>all</option>
-        <option value={FILTER_BY_STATUS_IN_WORK}>in work</option>
-        <option value={FILTER_BY_STATUS_COMPLETED}>completed</option>
-      </select>
+
+      <Select 
+        size="small"
+        value={filterStatus} 
+        onChange={onChangeStatus}>
+          <MenuItem value={FILTER_BY_STATUS_ALL}>Все</MenuItem>
+          <MenuItem value={FILTER_BY_STATUS_IN_WORK}>В работе</MenuItem>
+          <MenuItem value={FILTER_BY_STATUS_COMPLETED}>Готово</MenuItem>
+      </Select>
 
       <ul>
         {
           filteredList.map(({status, text}, index) => {
             return <li>
-              <input checked={status} type="checkbox" onChange={changeStatus(index, status)} /> {text}
+              <Checkbox checked={status} type="checkbox" onChange={changeStatus(index, status)} /> {text}
             </li>
           })
         }
