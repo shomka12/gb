@@ -1,3 +1,0 @@
-products();
-
-// window.onload = init();

@@ -1,2 +1,0 @@
-# gb
-Учеба в GeekBrains
