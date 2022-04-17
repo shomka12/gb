@@ -1,0 +1,45 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  max-width: 1024px;
+  padding-left: 20px;
+  padding-top: 17px;
+}
+
+.block {
+  max-width: 482px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 32px;
+  margin-bottom: 37px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 47px;
+  margin-bottom: 20px;
+}
+
+.text1,
+.text2,
+.text3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-indent: 15px;
+}
+
+.text2 {
+  margin-top: 23px;
+}
