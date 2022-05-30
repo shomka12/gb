@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -13,41 +13,30 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <link rel="stylesheet" href="style.css">
     <div id="app">
         <v-app>
             <v-main>
-                <v-container>
-
-                    <v-layout align-center justify-center>
-                        <v-btn color="blue" dark large @click="loadNextImage">
-                            Another &nbsp; <v-icon>refresh</v-icon>
-                        </v-btn>
-                    </v-layout>
-
-                    <!-- <v-layout row wrap>
-                        <v-flex xs12>
-                            <v-card v-for="el in responseImage" flat tile class="d-flex">
-                                <v-img :src="el.url" contain height="500px" width="500px">
-                                </v-img>
-                            </v-card>
-                        </v-flex>
-                    </v-layout>
- -->
-                    <!-- <v-row>
-                        <v-col class="d-flex child-flex" cols="12"> -->
-                    <v-card v-for="el in responseImage" class="mx-auto" max-width="700">
-                        <v-img :src="el.url" aspect-ratio="1" class="grey lighten-2">
-                            <!-- <template v-slot:placeholder>
-                                        <v-row class="fill-height" align="center" justify="center">
-                                            <v-progress-circular indeterminate color="grey lighten-5">
-                                            </v-progress-circular>
-                                        </v-row>
-                                    </template> -->
-                        </v-img>
-                    </v-card>
-                    <!-- </v-col>
-                    </v-row> -->
-                </v-container>
+                <div class="wrapper">
+                    <header class="header">
+                        <button>Все котики</button>
+                        <button>Любимые котики</button>
+                        <!-- <a href="#" class="all-cats"> Все котики</a>
+                    <a href="#" class="favorite-cats"> Любимые котики</a> -->
+                    </header>
+                    <v-row>
+                        <v-col v-for="el in responseImage" class="d-flex child-flex">
+                            <v-img class="scattering" :src="el.url" height="350" width="350">
+                                <template v-slot:placeholder>
+                                    <v-row class="fill-height ma-0" align="center" justify="center">
+                                        <v-progress-circular indeterminate color="grey lighten-5">
+                                        </v-progress-circular>
+                                    </v-row>
+                                </template>
+                            </v-img>
+                        </v-col>
+                    </v-row>
+                </div>
             </v-main>
         </v-app>
     </div>
@@ -66,11 +55,11 @@
             methods: {
                 async loadNextImage() {
                     try {
-                        axios.defaults.headers.common['x-api-key'] = "e8885e7e-f275-4e0e-ae6c-3c5bfc160761" // Replace this with your API Key
+                        axios.defaults.headers.common['x-api-key'] = "e8885e7e-f275-4e0e-ae6c-3c5bfc160761"
 
-                        let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit: 10, size: "full" } }) // Ask for 1 Image, at full resolution
+                        let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit: 50, size: "100" } })
 
-                        this.image = response.data[0] // the response is an Array, so just use the first item as the Image
+                        this.image = response.data[0]
                         this.responseImage = response.data
 
                     } catch (err) {
