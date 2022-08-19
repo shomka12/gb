@@ -1,0 +1,13 @@
+.nav {
+  grid-area: n;
+  background-color: burlywood;
+}
+
+.item {
+  text-decoration: none;
+  color: darkslateblue;
+}
+
+.item:hover {
+  color: gold;
+}
